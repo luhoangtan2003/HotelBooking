@@ -103,16 +103,6 @@ namespace GUILAYER.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap CheckedOut {
-            get {
-                object obj = ResourceManager.GetObject("CheckedOut", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap EmailIsError {
             get {
                 object obj = ResourceManager.GetObject("EmailIsError", resourceCulture);
@@ -126,16 +116,6 @@ namespace GUILAYER.Properties {
         internal static System.Drawing.Bitmap EmailSuccess {
             get {
                 object obj = ResourceManager.GetObject("EmailSuccess", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap GrantedKey {
-            get {
-                object obj = ResourceManager.GetObject("GrantedKey", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -156,16 +136,6 @@ namespace GUILAYER.Properties {
         internal static System.Drawing.Bitmap LogoHotel {
             get {
                 object obj = ResourceManager.GetObject("LogoHotel", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap NoImage {
-            get {
-                object obj = ResourceManager.GetObject("NoImage", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -246,16 +216,6 @@ namespace GUILAYER.Properties {
         internal static System.Drawing.Bitmap Transaction {
             get {
                 object obj = ResourceManager.GetObject("Transaction", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Unscheduled {
-            get {
-                object obj = ResourceManager.GetObject("Unscheduled", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

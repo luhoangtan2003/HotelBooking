@@ -455,9 +455,6 @@
     <None Include="Resources\Reservation.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\NoImage.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\Reserved.png" />
   </ItemGroup>
   <ItemGroup>
@@ -480,15 +477,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\NotGranted.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\GrantedKey.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Unscheduled.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\CheckedOut.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.8.1">
