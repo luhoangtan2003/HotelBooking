@@ -137,7 +137,7 @@ namespace GUILAYER
 
                 KhachHangDataLoading();
 
-                HamChucNang.CapNhatBangKhachHang();
+                HamChucNang.CapNhatBangKhach();
             }
         }
 
@@ -688,7 +688,7 @@ namespace GUILAYER
                 {
                     String Message = $"LỊCH ĐƯỢC ĐẶT CỦA PHÒNG {NewRow.MAPHONG} XUNG ĐỘT VỚI CÁC LỊCH ĐÃ LÊN LỊCH TRƯỚC ĐÓ";
 
-                    SetInfo = new AlertInfo("THÔNG BÁO", Message, Properties.Resources.ScheduleClash);
+                    SetInfo = new AlertInfo("THÔNG BÁO!!!", Message, Properties.Resources.ScheduleClash);
 
                     ThongBaoDatPhong.Show(Owner, SetInfo);
 

@@ -369,8 +369,6 @@ namespace LOGICLAYER
                     if (GetHD.MATHOIDIEM == "PAYNOW")
                     {
                         GetHD.MATRANGTHAI = "PAID";
-
-                        HamChucNang.CapNhatBangThongKe();
                     }
 
                     NhanPhongRoi.Add(GetDatPhong(Phong.MAPHONGDAT));
@@ -435,8 +433,6 @@ namespace LOGICLAYER
                 if (GetHD.MATHOIDIEM != "PAYNOW")
                 {
                     GetHD.MATRANGTHAI = "PAID";
-
-                    HamChucNang.CapNhatBangThongKe();
                 }
             }
 

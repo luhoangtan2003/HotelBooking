@@ -1,4 +1,5 @@
 ﻿using DATALAYER;
+using DevExpress.PivotGrid.OLAP.Mdx;
 using DevExpress.XtraBars.Alerter;
 using LOGICLAYER;
 using System;
@@ -66,15 +67,9 @@ namespace GUILAYER
                 {
                     String Name = KhachHang_SLUE.Properties.GetDisplayText(KhachHang_SLUE.EditValue);
 
-                    Message = $"{Phong.TENPHONG} ĐƯỢC ĐẶT BỞI KHÁCH HÀNG {Name} ĐÃ NHẬN THÀNH CÔNG";
+                    Boolean NotificationSent = BookPhongOHandle.Notice(Phong.MAPHONGDAT, "OCCUPIED");
 
-                    BuildInfo = new AlertInfo("THÔNG BÁO", Message, Properties.Resources.GrantedKey);
-
-                    ThongBaoDatPhong.Show(Owner, BuildInfo);
-
-                    Boolean Delivered = BookPhongOHandle.Notice(Phong.MAPHONGDAT, "OCCUPIED");
-
-                    if (Delivered)
+                    if (NotificationSent)
                     {
                         Message = $"THÔNG BÁO XÁC NHẬN LẤY PHÒNG ĐÃ GỬI ĐẾN KHÁCH HÀNG {Name}";
 
@@ -89,6 +84,8 @@ namespace GUILAYER
 
                     ThongBaoKhachHang.Show(Owner, BuildInfo);
                 }
+
+                HamChucNang.CapNhatBangThongKe();
 
                 HamChucNang.CapNhatCheckInOut();
 

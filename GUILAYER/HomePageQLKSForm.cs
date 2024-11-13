@@ -73,11 +73,6 @@ namespace GUILAYER
             ListDenHanTraPhong.DataSource = HanTraPhong.Item1;
 
             ListQuaHanTraPhong.DataSource = HanTraPhong.Item2;
-
-            if (!Focused)
-            {
-                Focus();
-            }
         }
 
         private void MainForm_Load(object sender, EventArgs e)
@@ -89,6 +84,11 @@ namespace GUILAYER
 
         private void Form_KeyDown(object sender, KeyEventArgs e)
         {
+            if (!Focused)
+            {
+                Focus();
+            }
+
             if (e.KeyCode == Keys.Escape)
             {
                 PopOnSound = !PopOnSound;

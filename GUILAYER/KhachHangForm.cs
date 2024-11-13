@@ -11,7 +11,7 @@ namespace GUILAYER
     {
         public KhachHangForm()
         {
-            HamChucNang.BangKhachHang += DataLoading;
+            HamChucNang.BangKhach += DataLoading;
 
             InitializeComponent();
         }
@@ -93,7 +93,7 @@ namespace GUILAYER
 
                 KhachHandle.Add(Value);
 
-                DataLoading();
+                HamChucNang.CapNhatBangKhach();                
             }
         }
 
@@ -109,7 +109,7 @@ namespace GUILAYER
 
                 KhachHandle.Edit(Value);
 
-                DataLoading();
+                HamChucNang.CapNhatBangKhach();
             }
         }
 

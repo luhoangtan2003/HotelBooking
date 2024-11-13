@@ -41,11 +41,11 @@ namespace LOGICLAYER
             BangDichVu?.Invoke();
         }
 
-        public static event Action BangKhachHang;
+        public static event Action BangKhach;
 
-        public static void CapNhatBangKhachHang()
+        public static void CapNhatBangKhach()
         {
-            BangKhachHang?.Invoke();
+            BangKhach?.Invoke();
         }
 
         public static event Action BookPhong;

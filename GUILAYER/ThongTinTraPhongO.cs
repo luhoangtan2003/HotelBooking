@@ -26,13 +26,11 @@ namespace GUILAYER
 
         private void NutOK_Click(object sender, EventArgs e)
         {
-            if (HamChucNang.ShowAlert("Xác nhận nhận lại các phòng nghĩ đã chọn") == DialogResult.OK)
+            if (HamChucNang.ShowAlert("Xác nhận lấy lại phòng") == DialogResult.OK)
             {
                 BookPhongOHandle.XacNhanKhachHangTraPhong(BangDuLieu.SelectedRows);
 
-                AlertInfo SetInfo = new("THÔNG BÁO CHECKED OUT", "", Properties.Resources.CheckedOut);
-
-                ThongBaoDatPhong.Show(Owner, SetInfo);
+                HamChucNang.CapNhatBangThongKe();
 
                 HamChucNang.CapNhatCheckInOut();
 

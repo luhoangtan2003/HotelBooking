@@ -87,6 +87,8 @@
             // 
             this.MoTa.Location = new System.Drawing.Point(15, 344);
             this.MoTa.Name = "MoTa";
+            this.MoTa.Properties.Appearance.Font = new System.Drawing.Font("Verdana", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MoTa.Properties.Appearance.Options.UseFont = true;
             this.MoTa.Size = new System.Drawing.Size(744, 116);
             this.MoTa.TabIndex = 17;
             // 

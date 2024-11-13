@@ -15,6 +15,8 @@ namespace GUILAYER
         {
             HamChucNang.CheckInOut += BangKhachHangLoading;
 
+            HamChucNang.BangKhach += BangKhachHangLoading;
+
             InitializeComponent();
         }
 
@@ -27,9 +29,8 @@ namespace GUILAYER
         String TrangThai;
 
         private void FormLoad(object sender, EventArgs e)
-        {
-            BangKhachHangLoading();
-        }
+        
+                                => BangKhachHangLoading();
 
         private void TrangThai_EditValueChanged(object sender, EventArgs e)
         {
@@ -113,78 +114,41 @@ namespace GUILAYER
 
         private void NutLayPhong_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            if (BangKhachDat.SelectedRows.Count > 0)
-            {
-                Object GetRow = BangKhachDat.SelectedRows[0].Cells["IDKHACH"].Value;
+            Object GetRow = BangKhachDat.SelectedRows[0].Cells["IDKHACH"].Value;
 
-                ThongTinNhanPhong NewNhanPhongForm = new ThongTinNhanPhong(GetRow);
+            ThongTinNhanPhong NewNhanPhongForm = new ThongTinNhanPhong(GetRow);
 
-                NewNhanPhongForm.ShowDialog();
-            }
-            else
-            {
-                HamChucNang.ShowError("Không thể lấy, chưa có hàng nào được chọn");
-            }
+            NewNhanPhongForm.ShowDialog();
         }
 
         private void NutHuyPhong_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            if (BangKhachDat.SelectedRows.Count > 0)
+            String GetMaKhach = BangKhachDat.SelectedRows[0].Cells["IDKHACH"].Value.ToString();
+
+            String GetHoVaTen = BangKhachDat.SelectedRows[0].Cells["HOVATEN"].Value.ToString();
+
+            if (HamChucNang.ShowAlert("Hủy toàn bộ phòng chờ của khách???") == DialogResult.OK)
             {
-                String GetMaKhach = BangKhachDat.SelectedRows[0].Cells["IDKHACH"].Value.ToString();
-
-                String GetHoVaTen = BangKhachDat.SelectedRows[0].Cells["HOVATEN"].Value.ToString();
-
-                if (HamChucNang.ShowAlert("Hủy toàn bộ phòng chờ của khách???") == DialogResult.OK)
+                if (PhongDatHandle.HuyTatCaPhongDangDat(GetMaKhach))
                 {
-                    Boolean Has = PhongDatHandle.HuyTatCaPhongDangDat(GetMaKhach);
+                    HamChucNang.CapNhatBookPhong();
 
-                    AlertInfo SetInfo;
+                    HamChucNang.CapNhatBangPhong();
 
-                    if (Has)
-                    {
-                        String Message = $"ĐÃ HỦY TẤT CẢ CÁC PHÒNG ĐANG ĐẶT CỦA KHÁCH HÀNG {GetHoVaTen}";
+                    BangKhachHangLoading();
 
-                        SetInfo = new AlertInfo("THÔNG BÁO", Message, Properties.Resources.Cancellation);
-
-                        HamChucNang.CapNhatBookPhong();
-
-                        HamChucNang.CapNhatBangPhong();
-
-                        BangKhachHangLoading();
-
-                        HamChucNang.CapNhatBangHoaDonPhong();
-                    }
-                    else
-                    {
-                        String Message = $"KHÔNG THỂ HỦY BỞI VÌ KHÔNG CÓ PHÒNG ĐANG CHỜ CỦA {GetHoVaTen}";
-
-                        SetInfo = new AlertInfo("THÔNG BÁO", Message, Properties.Resources.Unscheduled);
-                    }
-
-                    ThongBaoDatPhong.Show(Owner, SetInfo);
+                    HamChucNang.CapNhatBangHoaDonPhong();
                 }
-            }
-            else
-            {
-                HamChucNang.ShowError("Không thể hủy đặt phòng, chưa có hàng nào được chọn");
             }
         }
 
         private void NutTraPhong_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            if (BangKhachDat.SelectedRows.Count > 0)
-            {
-                Object GetRow = BangKhachDat.SelectedRows[0].Cells["IDKHACH"].Value;
+            Object GetRow = BangKhachDat.SelectedRows[0].Cells["IDKHACH"].Value;
 
-                ThongTinTraPhongO NewTraPhongOForm = new ThongTinTraPhongO(GetRow);
+            ThongTinTraPhongO NewTraPhongOForm = new ThongTinTraPhongO(GetRow);
 
-                NewTraPhongOForm.ShowDialog();
-            }
-            else
-            {
-                HamChucNang.ShowError("Không thể lấy, chưa có hàng nào được chọn");
-            }
+            NewTraPhongOForm.ShowDialog();
         }
 
         private void DinhDangKhungThongBao_BeforeFormShow(object sender, AlertFormEventArgs e)

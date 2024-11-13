@@ -392,6 +392,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ThongTinLoaiPhong.resx">
       <DependentUpon>ThongTinLoaiPhong.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="ThongTinNhanPhong.resx">
       <DependentUpon>ThongTinNhanPhong.cs</DependentUpon>

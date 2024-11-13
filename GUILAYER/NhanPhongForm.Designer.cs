@@ -95,7 +95,6 @@
             this.MAQT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TENNUOC = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BangTuyChonKhachHang = new DevExpress.XtraBars.PopupMenu(this.components);
-            this.ThongBaoDatPhong = new DevExpress.XtraBars.Alerter.AlertControl(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.BarManager)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DockManager)).BeginInit();
             this.ThanhPhanLoai.SuspendLayout();
@@ -841,16 +840,7 @@
             this.BangTuyChonKhachHang.Manager = this.BarManager;
             this.BangTuyChonKhachHang.Name = "BangTuyChonKhachHang";
             // 
-            // ThongBaoDatPhong
-            // 
-            this.ThongBaoDatPhong.AllowHotTrack = false;
-            this.ThongBaoDatPhong.AppearanceCaption.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ThongBaoDatPhong.AppearanceCaption.Options.UseFont = true;
-            this.ThongBaoDatPhong.AppearanceText.Font = new System.Drawing.Font("Verdana", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ThongBaoDatPhong.AppearanceText.Options.UseFont = true;
-            this.ThongBaoDatPhong.BeforeFormShow += new DevExpress.XtraBars.Alerter.AlertFormEventHandler(this.DinhDangKhungThongBao_BeforeFormShow);
-            // 
-            // CheckInOutForm
+            // NhanPhongForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -862,7 +852,7 @@
             this.Controls.Add(this.BarDockControlBottom);
             this.Controls.Add(this.BarDockControlTop);
             this.IconOptions.Image = global::GUILAYER.Properties.Resources.LogoHotel;
-            this.Name = "CheckInOutForm";
+            this.Name = "NhanPhongForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "NHẬN - TRẢ PHÒNG";
             this.Load += new System.EventHandler(this.FormLoad);
@@ -942,7 +932,6 @@
         private DevExpress.XtraBars.BarButtonItem HuyPhongPopOn;
         private DevExpress.XtraBars.BarButtonItem LayPhongPopOn;
         private DevExpress.XtraBars.PopupMenu BangTuyChonKhachHang;
-        private DevExpress.XtraBars.Alerter.AlertControl ThongBaoDatPhong;
         private DevExpress.XtraBars.BarButtonItem NutTraPhong;
         private DevExpress.XtraBars.BarButtonItem TraPhongPopOn;
     }

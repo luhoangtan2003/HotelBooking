@@ -20,7 +20,7 @@ namespace GUILAYER
 
             HamChucNang.PhongDatPhong += PhongSLUELoading;
 
-            HamChucNang.BangKhachHang += KhachSLUELoading;
+            HamChucNang.BangKhach += KhachSLUELoading;
         }
 
         readonly PaymentTimeBackend PaymentTimeHandle = new();

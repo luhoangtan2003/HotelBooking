@@ -19,7 +19,7 @@ namespace GUILAYER
 
             HamChucNang.BookPhong += TotalDataLoading;
 
-            HamChucNang.BangKhachHang += KhachSLUELoading;
+            HamChucNang.BangKhach += KhachSLUELoading;
 
             InitializeComponent();
         }

@@ -75,6 +75,9 @@
             this.PhanTrang = new DevExpress.XtraTab.XtraTabControl();
             this.TrangHoaDonPhongO = new DevExpress.XtraTab.XtraTabPage();
             this.BangHoaDonPhongO = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.TrangHoaDonDichVu = new DevExpress.XtraTab.XtraTabPage();
+            this.LabelControl7 = new DevExpress.XtraEditors.LabelControl();
+            this.BangTuyChonHoaDonPhong = new DevExpress.XtraBars.PopupMenu(this.components);
             this.MAHOADONHDPN = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MAPHONGDATHDPN = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MAPHONGHDPN = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -89,9 +92,6 @@
             this.TENTHOIDIEMHDPN = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MATRANGTHAIHDPN = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TENTRANGTHAIHDPN = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TrangHoaDonDichVu = new DevExpress.XtraTab.XtraTabPage();
-            this.LabelControl7 = new DevExpress.XtraEditors.LabelControl();
-            this.BangTuyChonHoaDonPhong = new DevExpress.XtraBars.PopupMenu(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.BarManager)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DockManager)).BeginInit();
             this.ThanhBoLoc.SuspendLayout();
@@ -645,6 +645,34 @@
             this.BangHoaDonPhongO.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
             this.BangHoaDonPhongO.MouseClick += new System.Windows.Forms.MouseEventHandler(this.BangHoaDonPhong_MouseClick);
             // 
+            // TrangHoaDonDichVu
+            // 
+            this.TrangHoaDonDichVu.Appearance.HeaderActive.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold);
+            this.TrangHoaDonDichVu.Appearance.HeaderActive.Options.UseFont = true;
+            this.TrangHoaDonDichVu.Controls.Add(this.LabelControl7);
+            this.TrangHoaDonDichVu.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("TrangHoaDonDichVu.ImageOptions.SvgImage")));
+            this.TrangHoaDonDichVu.Margin = new System.Windows.Forms.Padding(10);
+            this.TrangHoaDonDichVu.Name = "TrangHoaDonDichVu";
+            this.TrangHoaDonDichVu.Size = new System.Drawing.Size(1571, 662);
+            this.TrangHoaDonDichVu.Text = "HÓA ĐƠN DỊCH VỤ";
+            // 
+            // LabelControl7
+            // 
+            this.LabelControl7.Appearance.Font = new System.Drawing.Font("Verdana", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelControl7.Appearance.Options.UseFont = true;
+            this.LabelControl7.Location = new System.Drawing.Point(530, 311);
+            this.LabelControl7.Name = "LabelControl7";
+            this.LabelControl7.Size = new System.Drawing.Size(510, 26);
+            this.LabelControl7.TabIndex = 4;
+            this.LabelControl7.Text = "CHỨC NĂNG NÀY CHƯA ĐƯỢC XÂY DỰNG";
+            // 
+            // BangTuyChonHoaDonPhong
+            // 
+            this.BangTuyChonHoaDonPhong.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.InPopOn)});
+            this.BangTuyChonHoaDonPhong.Manager = this.BarManager;
+            this.BangTuyChonHoaDonPhong.Name = "BangTuyChonHoaDonPhong";
+            // 
             // MAHOADONHDPN
             // 
             this.MAHOADONHDPN.DataPropertyName = "MAHOADON";
@@ -702,7 +730,7 @@
             dataGridViewCellStyle3.Format = "g";
             dataGridViewCellStyle3.NullValue = null;
             this.NGAYTHANHTOANHDPN.DefaultCellStyle = dataGridViewCellStyle3;
-            this.NGAYTHANHTOANHDPN.HeaderText = "NGÀY TRẢ";
+            this.NGAYTHANHTOANHDPN.HeaderText = "NGÀY TRẢ TIỀN";
             this.NGAYTHANHTOANHDPN.MinimumWidth = 6;
             this.NGAYTHANHTOANHDPN.Name = "NGAYTHANHTOANHDPN";
             this.NGAYTHANHTOANHDPN.ReadOnly = true;
@@ -776,34 +804,6 @@
             this.TENTRANGTHAIHDPN.MinimumWidth = 6;
             this.TENTRANGTHAIHDPN.Name = "TENTRANGTHAIHDPN";
             this.TENTRANGTHAIHDPN.ReadOnly = true;
-            // 
-            // TrangHoaDonDichVu
-            // 
-            this.TrangHoaDonDichVu.Appearance.HeaderActive.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold);
-            this.TrangHoaDonDichVu.Appearance.HeaderActive.Options.UseFont = true;
-            this.TrangHoaDonDichVu.Controls.Add(this.LabelControl7);
-            this.TrangHoaDonDichVu.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("TrangHoaDonDichVu.ImageOptions.SvgImage")));
-            this.TrangHoaDonDichVu.Margin = new System.Windows.Forms.Padding(10);
-            this.TrangHoaDonDichVu.Name = "TrangHoaDonDichVu";
-            this.TrangHoaDonDichVu.Size = new System.Drawing.Size(1571, 662);
-            this.TrangHoaDonDichVu.Text = "HÓA ĐƠN DỊCH VỤ";
-            // 
-            // LabelControl7
-            // 
-            this.LabelControl7.Appearance.Font = new System.Drawing.Font("Verdana", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelControl7.Appearance.Options.UseFont = true;
-            this.LabelControl7.Location = new System.Drawing.Point(530, 311);
-            this.LabelControl7.Name = "LabelControl7";
-            this.LabelControl7.Size = new System.Drawing.Size(510, 26);
-            this.LabelControl7.TabIndex = 4;
-            this.LabelControl7.Text = "CHỨC NĂNG NÀY CHƯA ĐƯỢC XÂY DỰNG";
-            // 
-            // BangTuyChonHoaDonPhong
-            // 
-            this.BangTuyChonHoaDonPhong.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.InPopOn)});
-            this.BangTuyChonHoaDonPhong.Manager = this.BarManager;
-            this.BangTuyChonHoaDonPhong.Name = "BangTuyChonHoaDonPhong";
             // 
             // ThanhToanBillForm
             // 
@@ -887,6 +887,9 @@
         private DevExpress.XtraEditors.LabelControl LabelControl6;
         private DevExpress.XtraGrid.Columns.GridColumn GridColumn5;
         private Guna.UI2.WinForms.Guna2DataGridView BangHoaDonPhongO;
+        private DevExpress.XtraBars.PopupMenu BangTuyChonHoaDonPhong;
+        private DevExpress.XtraBars.BarButtonItem InPopOn;
+        private DevExpress.XtraEditors.LabelControl LabelControl7;
         private System.Windows.Forms.DataGridViewTextBoxColumn MAHOADONHDPN;
         private System.Windows.Forms.DataGridViewTextBoxColumn MAPHONGDATHDPN;
         private System.Windows.Forms.DataGridViewTextBoxColumn MAPHONGHDPN;
@@ -901,8 +904,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn TENTHOIDIEMHDPN;
         private System.Windows.Forms.DataGridViewTextBoxColumn MATRANGTHAIHDPN;
         private System.Windows.Forms.DataGridViewTextBoxColumn TENTRANGTHAIHDPN;
-        private DevExpress.XtraBars.PopupMenu BangTuyChonHoaDonPhong;
-        private DevExpress.XtraBars.BarButtonItem InPopOn;
-        private DevExpress.XtraEditors.LabelControl LabelControl7;
     }
 }
