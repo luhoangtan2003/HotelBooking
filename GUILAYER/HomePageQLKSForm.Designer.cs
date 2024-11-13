@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            this.components = new System.ComponentModel.Container();
             DevExpress.XtraSplashScreen.SplashScreenManager SplashScreenManager = new DevExpress.XtraSplashScreen.SplashScreenManager(this, typeof(global::GUILAYER.SplashScreenProject), true, true, true);
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomePageQLKSForm));
             this.ThanhRibbon = new DevExpress.XtraBars.Ribbon.RibbonControl();
@@ -50,6 +51,8 @@
             this.SkinDropDownButtonItem1 = new DevExpress.XtraBars.SkinDropDownButtonItem();
             this.SkinPaletteDropDownButtonItem1 = new DevExpress.XtraBars.SkinPaletteDropDownButtonItem();
             this.DoiPhong = new DevExpress.XtraBars.BarButtonItem();
+            this.MaNguon = new DevExpress.XtraBars.BarButtonItem();
+            this.Email = new DevExpress.XtraBars.BarButtonItem();
             this.TrangDichVu = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.RibbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.TrangQuanLy = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -135,10 +138,12 @@
             this.LayPhong,
             this.SkinDropDownButtonItem1,
             this.SkinPaletteDropDownButtonItem1,
-            this.DoiPhong});
+            this.DoiPhong,
+            this.MaNguon,
+            this.Email});
             this.ThanhRibbon.Location = new System.Drawing.Point(0, 0);
             this.ThanhRibbon.Margin = new System.Windows.Forms.Padding(264, 231, 264, 231);
-            this.ThanhRibbon.MaxItemId = 29;
+            this.ThanhRibbon.MaxItemId = 31;
             this.ThanhRibbon.Name = "ThanhRibbon";
             this.ThanhRibbon.OptionsMenuMinWidth = 24399;
             this.ThanhRibbon.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
@@ -247,7 +252,7 @@
             // 
             this.GioiThieu.Caption = "GIỚI THIỆU";
             this.GioiThieu.Id = 16;
-            this.GioiThieu.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("GioiThieu.ImageOptions.SvgImage")));
+            this.GioiThieu.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("GioiThieu.ImageOptions.LargeImage")));
             this.GioiThieu.Name = "GioiThieu";
             this.GioiThieu.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.Introduction_ItemClick);
             // 
@@ -284,6 +289,22 @@
             this.DoiPhong.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("DoiPhong.ImageOptions.SvgImage")));
             this.DoiPhong.Name = "DoiPhong";
             this.DoiPhong.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.YeuCauDoiPhong_ItemClick);
+            // 
+            // MaNguon
+            // 
+            this.MaNguon.Caption = "MÃ NGUỒN";
+            this.MaNguon.Id = 29;
+            this.MaNguon.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("MaNguon.ImageOptions.LargeImage")));
+            this.MaNguon.Name = "MaNguon";
+            this.MaNguon.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.MaNguonGithub_ItemClick);
+            // 
+            // Email
+            // 
+            this.Email.Caption = "EMAIL";
+            this.Email.Id = 30;
+            this.Email.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("Email.ImageOptions.LargeImage")));
+            this.Email.Name = "Email";
+            this.Email.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.QuanLyMailbox_ItemClick);
             // 
             // TrangDichVu
             // 
@@ -335,8 +356,9 @@
             this.RibbonPageGroup4.ItemLinks.Add(this.QuanLyKhachHang, true);
             this.RibbonPageGroup4.ItemLinks.Add(this.QuanLyHoaDon);
             this.RibbonPageGroup4.ItemLinks.Add(this.ThongKeDoanhThu);
+            this.RibbonPageGroup4.ItemLinks.Add(this.Email);
             this.RibbonPageGroup4.Name = "RibbonPageGroup4";
-            this.RibbonPageGroup4.Text = "CÁC MỤC KHÁC";
+            this.RibbonPageGroup4.Text = "MỤC KHÁC";
             // 
             // TrangHeThong
             // 
@@ -353,6 +375,7 @@
             this.RibbonPageGroup5.ItemLinks.Add(this.SaoLuu);
             this.RibbonPageGroup5.ItemLinks.Add(this.KhoiPhuc);
             this.RibbonPageGroup5.ItemLinks.Add(this.GioiThieu);
+            this.RibbonPageGroup5.ItemLinks.Add(this.MaNguon);
             this.RibbonPageGroup5.Name = "RibbonPageGroup5";
             this.RibbonPageGroup5.Text = "HỆ THỐNG";
             // 
@@ -709,5 +732,7 @@
         private DevExpress.XtraEditors.ListBoxControl DanhSachQuaHanLayPhong;
         private DevExpress.XtraEditors.ListBoxControl DanhSachDenHanTraPhong;
         private DevExpress.XtraEditors.ListBoxControl DanhSachQuaHanTraPhong;
+        private DevExpress.XtraBars.BarButtonItem MaNguon;
+        private DevExpress.XtraBars.BarButtonItem Email;
     }
 }

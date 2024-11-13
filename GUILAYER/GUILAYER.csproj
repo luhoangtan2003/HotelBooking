@@ -90,6 +90,15 @@
     <Reference Include="Guna.UI2">
       <HintPath>C:\Users\LHT\OneDrive\Documents\Initialization\Guna.UI2.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.Web.WebView2.Core, Version=1.0.2849.39, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.WebView2.1.0.2849.39\lib\net462\Microsoft.Web.WebView2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.WebView2.WinForms, Version=1.0.2849.39, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.WebView2.1.0.2849.39\lib\net462\Microsoft.Web.WebView2.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.WebView2.Wpf, Version=1.0.2849.39, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.WebView2.1.0.2849.39\lib\net462\Microsoft.Web.WebView2.Wpf.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="Microsoft.CSharp" />
@@ -121,11 +130,23 @@
     <Compile Include="ChuyenPhongOForm.Designer.cs">
       <DependentUpon>ChuyenPhongOForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="QuanLyMailboxForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLyMailboxForm.Designer.cs">
+      <DependentUpon>QuanLyMailboxForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="HoaDonPhongReport.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="HoaDonPhongReport.Designer.cs">
       <DependentUpon>HoaDonPhongReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DuAnMaNguonGitForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DuAnMaNguonGitForm.Designer.cs">
+      <DependentUpon>DuAnMaNguonGitForm.cs</DependentUpon>
     </Compile>
     <Compile Include="RevenueStatisticsReport\PhanTichDuLieuTheoD.cs">
       <SubType>UserControl</SubType>
@@ -315,11 +336,17 @@
     <EmbeddedResource Include="ChuyenPhongOForm.resx">
       <DependentUpon>ChuyenPhongOForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DuAnMaNguonGitForm.resx">
+      <DependentUpon>DuAnMaNguonGitForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="HoaDonPhongReport.resx">
       <DependentUpon>HoaDonPhongReport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="KhoiPhucSaoLuuForm.resx">
       <DependentUpon>KhoiPhucSaoLuuForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanLyMailboxForm.resx">
+      <DependentUpon>QuanLyMailboxForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="RevenueStatisticsReport\PhanTichDuLieuTheoD.resx">
       <DependentUpon>PhanTichDuLieuTheoD.cs</DependentUpon>
@@ -500,8 +527,10 @@
     </PropertyGroup>
     <Error Condition="!Exists('..\Packages\EntityFramework.6.5.1\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\Packages\EntityFramework.6.5.1\build\EntityFramework.props'))" />
     <Error Condition="!Exists('..\Packages\EntityFramework.6.5.1\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\Packages\EntityFramework.6.5.1\build\EntityFramework.targets'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.Web.WebView2.1.0.2849.39\build\Microsoft.Web.WebView2.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Web.WebView2.1.0.2849.39\build\Microsoft.Web.WebView2.targets'))" />
   </Target>
   <Import Project="..\Packages\EntityFramework.6.5.1\build\EntityFramework.targets" Condition="Exists('..\Packages\EntityFramework.6.5.1\build\EntityFramework.targets')" />
+  <Import Project="..\packages\Microsoft.Web.WebView2.1.0.2849.39\build\Microsoft.Web.WebView2.targets" Condition="Exists('..\packages\Microsoft.Web.WebView2.1.0.2849.39\build\Microsoft.Web.WebView2.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

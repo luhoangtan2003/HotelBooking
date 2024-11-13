@@ -77,8 +77,6 @@ namespace GUILAYER
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            Thread.Sleep(1000);
-
             RealTime.Start();
         }
 
@@ -194,6 +192,16 @@ namespace GUILAYER
         private void YeuCauDoiPhong_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             OpenForm(typeof(ChuyenPhongOForm));
+        }
+
+        private void MaNguonGithub_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            OpenForm(typeof(DuAnMaNguonGitForm));
+        }
+
+        private void QuanLyMailbox_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            OpenForm(typeof(QuanLyMailboxForm));
         }
     }
 }
