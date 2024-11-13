@@ -93,7 +93,7 @@ namespace GUILAYER
 
                 KhachHandle.Add(Value);
 
-                HamChucNang.CapNhatBangKhach();                
+                HamChucNang.CapNhatBangKhach();
             }
         }
 

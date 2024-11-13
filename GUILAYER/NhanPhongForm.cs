@@ -29,7 +29,7 @@ namespace GUILAYER
         String TrangThai;
 
         private void FormLoad(object sender, EventArgs e)
-        
+
                                 => BangKhachHangLoading();
 
         private void TrangThai_EditValueChanged(object sender, EventArgs e)

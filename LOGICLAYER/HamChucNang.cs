@@ -105,7 +105,6 @@ namespace LOGICLAYER
                         DisableControlsExcept(C, NutHuyBo, NutXacNhan);
                     }
                 }
-                
             }
         }
 
