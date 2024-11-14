@@ -1,6 +1,7 @@
 ﻿using LOGICLAYER;
 using Microsoft.Web.WebView2.Core;
 using System;
+using System.IO;
 using System.Linq;
 
 namespace GUILAYER
@@ -14,9 +15,18 @@ namespace GUILAYER
 
         private async void QuanLyMailboxForm_Load(object sender, EventArgs e)
         {
+            String WVData = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), "LHT Hotel", "WebView2 Data");
+
+            if (!Directory.Exists(WVData))
+            {
+                Directory.CreateDirectory(WVData);
+            }
+
+            CoreWebView2Environment Envi = await CoreWebView2Environment.CreateAsync(null, WVData);
+
             if (!String.IsNullOrEmpty(CoreWebView2Environment.GetAvailableBrowserVersionString()))
             {
-                await Mailbox.EnsureCoreWebView2Async(null);
+                await Mailbox.EnsureCoreWebView2Async(Envi);
 
                 String PathMail = "https://mail.google.com";
 
