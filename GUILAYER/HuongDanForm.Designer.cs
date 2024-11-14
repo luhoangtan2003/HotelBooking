@@ -46,7 +46,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1883, 741);
             this.Controls.Add(this.PDF);
-            this.IconOptions.Image = global::GUILAYER.Properties.Resources.LogoHotel;
+            this.IconOptions.Image = global::GUILAYER.Properties.Resources.Logo;
             this.Name = "HuongDanForm";
             this.Text = "GIỚI THIỆU VÀ HƯỚNG DẪN";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.HuongDanForm_Closed);

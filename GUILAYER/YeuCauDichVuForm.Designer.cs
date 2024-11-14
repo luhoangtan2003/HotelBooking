@@ -47,7 +47,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1883, 741);
             this.Controls.Add(this.LabelControl2);
-            this.IconOptions.Image = global::GUILAYER.Properties.Resources.LogoHotel;
+            this.IconOptions.Image = global::GUILAYER.Properties.Resources.Logo;
             this.Name = "YeuCauDichVuForm";
             this.Text = "ĐẶT DỊCH VỤ";
             this.ResumeLayout(false);

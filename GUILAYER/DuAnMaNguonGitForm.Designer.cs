@@ -50,7 +50,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1883, 741);
             this.Controls.Add(this.ThungChuaGit);
-            this.IconOptions.Image = global::GUILAYER.Properties.Resources.LogoHotel;
+            this.IconOptions.Image = global::GUILAYER.Properties.Resources.Logo;
             this.Name = "DuAnMaNguonGitForm";
             this.Text = "MÃ NGUỒN";
             this.Load += new System.EventHandler(this.DuAnMaNguonGitForm_Load);

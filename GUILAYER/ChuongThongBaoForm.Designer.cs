@@ -64,7 +64,7 @@
             this.Controls.Add(this.LabelControl1);
             this.Controls.Add(this.Picture);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.IconOptions.Image = global::GUILAYER.Properties.Resources.LogoHotel;
+            this.IconOptions.Image = global::GUILAYER.Properties.Resources.Logo;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "ChuongThongBaoForm";

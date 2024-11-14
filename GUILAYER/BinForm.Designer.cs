@@ -36,7 +36,7 @@
             // 
             this.Image.AllowDrop = true;
             this.Image.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Image.EditValue = global::GUILAYER.Properties.Resources.RecycleBin;
+            this.Image.EditValue = global::GUILAYER.Properties.Resources.Bin;
             this.Image.Location = new System.Drawing.Point(0, 0);
             this.Image.Margin = new System.Windows.Forms.Padding(4);
             this.Image.Name = "Image";
@@ -55,7 +55,7 @@
             this.ClientSize = new System.Drawing.Size(300, 300);
             this.Controls.Add(this.Image);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
-            this.IconOptions.Image = global::GUILAYER.Properties.Resources.LogoHotel;
+            this.IconOptions.Image = global::GUILAYER.Properties.Resources.Logo;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "BinForm";

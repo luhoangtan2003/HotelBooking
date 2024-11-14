@@ -628,8 +628,6 @@ namespace GUILAYER
         {
             if (DataConstraintsAndValidity() == false) { return; }
 
-            Cursor.Current = Cursors.WaitCursor;
-
             foreach (DataGridViewRow PhongNghi in BangPhongODaChon.Rows)
             {
                 PHONGDAT_TBL NewRow = new PHONGDAT_TBL();
@@ -688,7 +686,7 @@ namespace GUILAYER
                 {
                     String Message = $"LỊCH ĐƯỢC ĐẶT CỦA PHÒNG {NewRow.MAPHONG} XUNG ĐỘT VỚI CÁC LỊCH ĐÃ LÊN LỊCH TRƯỚC ĐÓ";
 
-                    SetInfo = new AlertInfo("THÔNG BÁO!!!", Message, Properties.Resources.ScheduleClash);
+                    SetInfo = new AlertInfo("THÔNG BÁO", Message, Properties.Resources.Conflict);
 
                     ThongBaoDatPhong.Show(Owner, SetInfo);
 
@@ -708,44 +706,14 @@ namespace GUILAYER
 
                 if (ThongBaoDichVu.EditValue.ToString() == "GMAILBOX")
                 {
-                    String TenKhach = KhachHang_SLUE.Properties.GetDisplayText(KhachHang_SLUE.EditValue);
-
                     if (LoaiDatPhong.EditValue == (Object)"RESERVATION")
                     {
                         Boolean Yes = PhongDatHandle.Notice(NewRow.MAPHONGDAT, "RESERVED");
-
-                        if (Yes)
-                        {
-                            String Message = $"THÔNG BÁO XÁC NHẬN ĐẶT PHÒNG ĐÃ GỬI ĐẾN KHÁCH HÀNG {TenKhach}";
-
-                            SetInfo = new AlertInfo("THÔNG BÁO", Message, Properties.Resources.EmailSuccess);
-                        }
-                        else
-                        {
-                            String Message = $"KHÔNG THỂ CHUYỂN THÔNG BÁO XÁC NHẬN ĐẶT ĐẾN KHÁCH {TenKhach}";
-
-                            SetInfo = new AlertInfo("THÔNG BÁO", Message, Properties.Resources.EmailIsError);
-                        }
                     }
                     else
                     {
                         Boolean Yes = PhongDatHandle.Notice(NewRow.MAPHONGDAT, "OCCUPIED");
-
-                        if (Yes)
-                        {
-                            String Message = $"THÔNG BÁO XÁC NHẬN LẤY PHÒNG ĐÃ GỬI ĐẾN KHÁCH HÀNG {TenKhach}";
-
-                            SetInfo = new AlertInfo("THÔNG BÁO", Message, Properties.Resources.EmailSuccess);
-                        }
-                        else
-                        {
-                            String Message = $"KHÔNG THỂ CHUYỂN THÔNG BÁO XÁC NHẬN LẤY ĐẾN KHÁCH {TenKhach}";
-
-                            SetInfo = new AlertInfo("THÔNG BÁO", Message, Properties.Resources.EmailIsError);
-                        }
                     }
-
-                    ThongBaoKhachHang.Show(Owner, SetInfo);
                 }
 
                 HOADONPHONG_TBL HD = new HOADONPHONG_TBL();
@@ -798,15 +766,13 @@ namespace GUILAYER
                 HoaDonPNHandle.Add(HD);
             }
 
-            Cursor.Current = Cursors.Default;
+            HamChucNang.CapNhatBangHoaDonPhong();
 
             HamChucNang.CapNhatBookPhong();
 
-            HamChucNang.CapNhatCheckInOut();
-
             HamChucNang.CapNhatBangPhong();
 
-            HamChucNang.CapNhatBangHoaDonPhong();
+            HamChucNang.CapNhatCheckInOut();
 
             Close();
         }

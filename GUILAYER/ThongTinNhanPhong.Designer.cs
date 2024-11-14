@@ -38,7 +38,6 @@
             this.GridView9 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.GridColumn17 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.GridColumn18 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.ThongBaoKhachHang = new DevExpress.XtraBars.Alerter.AlertControl(this.components);
             this.ThongBaoDatPhong = new DevExpress.XtraBars.Alerter.AlertControl(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.IDKhach.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.KhachHang_SLUE.Properties)).BeginInit();
@@ -137,15 +136,6 @@
             this.GridColumn18.Visible = true;
             this.GridColumn18.VisibleIndex = 1;
             // 
-            // ThongBaoKhachHang
-            // 
-            this.ThongBaoKhachHang.AllowHotTrack = false;
-            this.ThongBaoKhachHang.AppearanceCaption.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ThongBaoKhachHang.AppearanceCaption.Options.UseFont = true;
-            this.ThongBaoKhachHang.AppearanceText.Font = new System.Drawing.Font("Verdana", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ThongBaoKhachHang.AppearanceText.Options.UseFont = true;
-            this.ThongBaoKhachHang.BeforeFormShow += new DevExpress.XtraBars.Alerter.AlertFormEventHandler(this.DinhDangKhungThongBao_BeforeFormShow);
-            // 
             // ThongBaoDatPhong
             // 
             this.ThongBaoDatPhong.AllowHotTrack = false;
@@ -168,7 +158,7 @@
             this.Controls.Add(this.IDKhach);
             this.Controls.Add(this.LabelControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
-            this.IconOptions.Image = global::GUILAYER.Properties.Resources.LogoHotel;
+            this.IconOptions.Image = global::GUILAYER.Properties.Resources.Logo;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "ThongTinNhanPhong";
@@ -193,7 +183,6 @@
         private DevExpress.XtraGrid.Views.Grid.GridView GridView9;
         private DevExpress.XtraGrid.Columns.GridColumn GridColumn17;
         private DevExpress.XtraGrid.Columns.GridColumn GridColumn18;
-        private DevExpress.XtraBars.Alerter.AlertControl ThongBaoKhachHang;
         private DevExpress.XtraBars.Alerter.AlertControl ThongBaoDatPhong;
     }
 }

@@ -515,7 +515,7 @@
             this.Controls.Add(this.BarDockControlRight);
             this.Controls.Add(this.BarDockControlBottom);
             this.Controls.Add(this.BarDockControlTop);
-            this.IconOptions.Image = global::GUILAYER.Properties.Resources.LogoHotel;
+            this.IconOptions.Image = global::GUILAYER.Properties.Resources.Logo;
             this.Name = "KhachHangForm";
             this.Text = "KHÁCH HÀNG";
             this.Load += new System.EventHandler(this.KhachHangForm_Load);

@@ -253,7 +253,7 @@
             this.Controls.Add(this.BarDockControlRight);
             this.Controls.Add(this.BarDockControlBottom);
             this.Controls.Add(this.BarDockControlTop);
-            this.IconOptions.Image = global::GUILAYER.Properties.Resources.LogoHotel;
+            this.IconOptions.Image = global::GUILAYER.Properties.Resources.Logo;
             this.Name = "LoaiDichVuForm";
             this.Text = "LOẠI DỊCH VỤ";
             this.Load += new System.EventHandler(this.LoaiDVForm_Load);

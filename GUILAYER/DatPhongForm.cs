@@ -1,11 +1,9 @@
 ﻿using DATALAYER;
-using DevExpress.XtraBars.Alerter;
 using DevExpress.XtraBars.Ribbon;
 using DevExpress.XtraBars.Ribbon.ViewInfo;
 using LOGICLAYER;
 using System;
 using System.Collections.Generic;
-using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
 
@@ -241,42 +239,19 @@ namespace GUILAYER
 
                     if (TrangThai == "RESERVED")
                     {
-                        Cursor.Current = Cursors.WaitCursor;
-
-                        String KhachHang = GetRow.Cells["HOVATEN"].Value.ToString();
-
                         PhongDatHandle.Cancel(MaDatPhong);
 
                         Boolean Yes = PhongDatHandle.Notice(MaDatPhong, "CANCELED");
 
-                        AlertInfo BuildInfo;
-
-                        if (Yes)
-                        {
-                            String Message = $"THÔNG BÁO XÁC NHẬN HỦY ĐẶT PHÒNG ĐÃ GỬI ĐẾN KHÁCH {KhachHang}";
-
-                            BuildInfo = new AlertInfo("THÔNG BÁO", Message, Properties.Resources.EmailSuccess);
-                        }
-                        else
-                        {
-                            String Message = $"KHÔNG THỂ GỬI THÔNG BÁO XÁC NHẬN HỦY ĐẶT ĐẾN KHÁCH {KhachHang}";
-
-                            BuildInfo = new AlertInfo("THÔNG BÁO", Message, Properties.Resources.EmailIsError);
-                        }
-
-                        ThongBaoKhachHang.Show(Owner, BuildInfo);
-
                         HoaDonHandle.Remove(MaDatPhong);
 
-                        HamChucNang.CapNhatCheckInOut();
-
                         HamChucNang.CapNhatBangPhong();
+
+                        HamChucNang.CapNhatCheckInOut();
 
                         HamChucNang.CapNhatBangHoaDonPhong();
 
                         TotalDataLoading();
-
-                        Cursor.Current = Cursors.Default;
                     }
                     else
                     {
@@ -474,10 +449,5 @@ namespace GUILAYER
 
             PhanTrang.SelectedTabPage = TabSuKien;
         }
-
-        private void DinhDangKhungThongBao_BeforeFormShow(object sender, AlertFormEventArgs e)
-
-                                                     => e.AlertForm.Size = new Size(450, 150);
-
     }
 }

@@ -603,7 +603,7 @@
             this.Controls.Add(this.BarDockControlRight);
             this.Controls.Add(this.BarDockControlBottom);
             this.Controls.Add(this.BarDockControlTop);
-            this.IconOptions.Image = global::GUILAYER.Properties.Resources.LogoHotel;
+            this.IconOptions.Image = global::GUILAYER.Properties.Resources.Logo;
             this.Name = "DichVuForm";
             this.Text = " DỊCH VỤ";
             this.Load += new System.EventHandler(this.DichVuForm_Load);

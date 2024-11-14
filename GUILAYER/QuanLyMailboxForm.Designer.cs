@@ -50,7 +50,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1883, 741);
             this.Controls.Add(this.Mailbox);
-            this.IconOptions.Image = global::GUILAYER.Properties.Resources.LogoHotel;
+            this.IconOptions.Image = global::GUILAYER.Properties.Resources.Logo;
             this.Name = "QuanLyMailboxForm";
             this.Text = "GMAIL";
             this.Load += new System.EventHandler(this.QuanLyMailboxForm_Load);

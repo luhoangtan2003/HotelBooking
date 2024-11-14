@@ -131,7 +131,7 @@
             this.ClientSize = new System.Drawing.Size(1883, 741);
             this.Controls.Add(this.Screens);
             this.Controls.Add(this.AccordionControl);
-            this.IconOptions.Image = global::GUILAYER.Properties.Resources.LogoHotel;
+            this.IconOptions.Image = global::GUILAYER.Properties.Resources.Logo;
             this.Name = "BaoCaoLoiNhuanForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "THỐNG KÊ DOANH THU";

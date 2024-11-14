@@ -851,7 +851,7 @@
             this.Controls.Add(this.BarDockControlRight);
             this.Controls.Add(this.BarDockControlBottom);
             this.Controls.Add(this.BarDockControlTop);
-            this.IconOptions.Image = global::GUILAYER.Properties.Resources.LogoHotel;
+            this.IconOptions.Image = global::GUILAYER.Properties.Resources.Logo;
             this.Name = "NhanPhongForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "NHẬN - TRẢ PHÒNG";

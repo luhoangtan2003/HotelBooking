@@ -118,7 +118,6 @@
             this.FloatingNotes = new DevExpress.Utils.ToolTipController(this.components);
             this.BangTuyChonSuKien = new DevExpress.XtraBars.PopupMenu(this.components);
             this.BangTuyChonPhongO = new DevExpress.XtraBars.PopupMenu(this.components);
-            this.ThongBaoKhachHang = new DevExpress.XtraBars.Alerter.AlertControl(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.BarManager)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DockManager)).BeginInit();
             this.HideContainerLeft.SuspendLayout();
@@ -1099,7 +1098,7 @@
             this.PhanTrang.Cursor = System.Windows.Forms.Cursors.Default;
             this.PhanTrang.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PhanTrang.Location = new System.Drawing.Point(30, 35);
-            this.PhanTrang.Margin = new System.Windows.Forms.Padding(38, 38, 38, 38);
+            this.PhanTrang.Margin = new System.Windows.Forms.Padding(38);
             this.PhanTrang.Name = "PhanTrang";
             this.PhanTrang.SelectedTabPage = this.TabSuKien;
             this.PhanTrang.Size = new System.Drawing.Size(1853, 706);
@@ -1116,7 +1115,7 @@
             this.TabSuKien.Controls.Add(this.BangSuKien);
             this.TabSuKien.Cursor = System.Windows.Forms.Cursors.Default;
             this.TabSuKien.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("TabSuKien.ImageOptions.SvgImage")));
-            this.TabSuKien.Margin = new System.Windows.Forms.Padding(38, 38, 38, 38);
+            this.TabSuKien.Margin = new System.Windows.Forms.Padding(38);
             this.TabSuKien.Name = "TabSuKien";
             this.TabSuKien.Size = new System.Drawing.Size(1851, 648);
             this.TabSuKien.Text = "SỰ KIỆN";
@@ -1128,7 +1127,7 @@
             this.TabPhongO.Controls.Add(this.PGC);
             this.TabPhongO.Cursor = System.Windows.Forms.Cursors.Default;
             this.TabPhongO.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("TabPhongO.ImageOptions.SvgImage")));
-            this.TabPhongO.Margin = new System.Windows.Forms.Padding(38, 38, 38, 38);
+            this.TabPhongO.Margin = new System.Windows.Forms.Padding(38);
             this.TabPhongO.Name = "TabPhongO";
             this.TabPhongO.Size = new System.Drawing.Size(1851, 648);
             this.TabPhongO.Text = "PHÒNG Ở";
@@ -1153,7 +1152,7 @@
             this.PGC.Gallery.GalleryItemHover += new DevExpress.XtraBars.Ribbon.GalleryItemEventHandler(this.GalleryItemHover);
             this.PGC.Gallery.GalleryItemLeave += new DevExpress.XtraBars.Ribbon.GalleryItemEventHandler(this.GalleryItemLeave);
             this.PGC.Location = new System.Drawing.Point(0, 0);
-            this.PGC.Margin = new System.Windows.Forms.Padding(60, 60, 60, 60);
+            this.PGC.Margin = new System.Windows.Forms.Padding(60);
             this.PGC.Name = "PGC";
             this.PGC.Size = new System.Drawing.Size(1851, 648);
             this.PGC.TabIndex = 2;
@@ -1166,7 +1165,7 @@
             // 
             this.GalleryControlClient1.GalleryControl = this.PGC;
             this.GalleryControlClient1.Location = new System.Drawing.Point(1, 1);
-            this.GalleryControlClient1.Margin = new System.Windows.Forms.Padding(60, 60, 60, 60);
+            this.GalleryControlClient1.Margin = new System.Windows.Forms.Padding(60);
             this.GalleryControlClient1.Size = new System.Drawing.Size(1828, 646);
             // 
             // FloatingNotes
@@ -1191,15 +1190,6 @@
             this.BangTuyChonPhongO.Manager = this.BarManager;
             this.BangTuyChonPhongO.Name = "BangTuyChonPhongO";
             // 
-            // ThongBaoKhachHang
-            // 
-            this.ThongBaoKhachHang.AllowHotTrack = false;
-            this.ThongBaoKhachHang.AppearanceCaption.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ThongBaoKhachHang.AppearanceCaption.Options.UseFont = true;
-            this.ThongBaoKhachHang.AppearanceText.Font = new System.Drawing.Font("Verdana", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ThongBaoKhachHang.AppearanceText.Options.UseFont = true;
-            this.ThongBaoKhachHang.BeforeFormShow += new DevExpress.XtraBars.Alerter.AlertFormEventHandler(this.DinhDangKhungThongBao_BeforeFormShow);
-            // 
             // DatPhongForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
@@ -1211,7 +1201,7 @@
             this.Controls.Add(this.BarDockControlRight);
             this.Controls.Add(this.BarDockControlBottom);
             this.Controls.Add(this.BarDockControlTop);
-            this.IconOptions.Image = global::GUILAYER.Properties.Resources.LogoHotel;
+            this.IconOptions.Image = global::GUILAYER.Properties.Resources.Logo;
             this.Name = "DatPhongForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ĐẶT PHÒNG";
@@ -1336,7 +1326,6 @@
         private DevExpress.XtraBars.BarButtonItem DatPhongHienTai;
         private DevExpress.XtraBars.BarButtonItem NhatKyDatPhong;
         private DevExpress.XtraBars.PopupMenu BangTuyChonPhongO;
-        private DevExpress.XtraBars.Alerter.AlertControl ThongBaoKhachHang;
         private DevExpress.XtraBars.BarButtonItem LayPhongHienTai;
     }
 }

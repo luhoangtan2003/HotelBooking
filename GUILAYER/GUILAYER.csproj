@@ -478,10 +478,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Introduction.pdf" />
-    <None Include="Resources\RecycleBin.png" />
+    <None Include="Resources\Bin.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\LogoHotel.png" />
+    <None Include="Resources\Logo.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AddGuest.png" />
@@ -505,13 +505,7 @@
     <None Include="Resources\Available.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\EmailIsError.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ScheduleClash.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\EmailSuccess.png" />
+    <None Include="Resources\Conflict.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\NotGranted.png" />
@@ -538,7 +532,7 @@
     <None Include="Resources\Github.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\TypeRoom.png" />
+    <None Include="Resources\RoomType.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Gmail.png" />
@@ -547,13 +541,13 @@
     <None Include="Resources\Introductions.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\CustomerService.png" />
+    <None Include="Resources\Service.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Revenue.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Bill.png" />
+    <None Include="Resources\Invoice.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Floor.png" />
@@ -571,16 +565,16 @@
     <None Include="Resources\Booking.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\CheckedIn.png" />
+    <None Include="Resources\Granted.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\CheckedOut.png" />
+    <None Include="Resources\Finish.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\ChangeRoom.png" />
+    <None Include="Resources\Change.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\OrderService.png" />
+    <None Include="Resources\Order.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Backup.png" />

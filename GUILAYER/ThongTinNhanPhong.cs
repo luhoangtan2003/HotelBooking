@@ -67,21 +67,6 @@ namespace GUILAYER
                     String Name = KhachHang_SLUE.Properties.GetDisplayText(KhachHang_SLUE.EditValue);
 
                     Boolean NotificationSent = BookPhongOHandle.Notice(Phong.MAPHONGDAT, "OCCUPIED");
-
-                    if (NotificationSent)
-                    {
-                        Message = $"THÔNG BÁO XÁC NHẬN LẤY PHÒNG ĐÃ GỬI ĐẾN KHÁCH HÀNG {Name}";
-
-                        BuildInfo = new AlertInfo("THÔNG BÁO", Message, Properties.Resources.EmailSuccess);
-                    }
-                    else
-                    {
-                        Message = $"KHÔNG THỂ CHUYỂN THÔNG BÁO XÁC NHẬN LẤY ĐẾN KHÁCH {Name}!";
-
-                        BuildInfo = new AlertInfo("THÔNG BÁO", Message, Properties.Resources.EmailIsError);
-                    }
-
-                    ThongBaoKhachHang.Show(Owner, BuildInfo);
                 }
 
                 HamChucNang.CapNhatBangThongKe();

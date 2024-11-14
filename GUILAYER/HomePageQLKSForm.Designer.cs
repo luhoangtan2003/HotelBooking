@@ -166,7 +166,7 @@
             // 
             this.TraPhong.Caption = "TRẢ PHÒNG";
             this.TraPhong.Id = 3;
-            this.TraPhong.ImageOptions.Image = global::GUILAYER.Properties.Resources.CheckedOut;
+            this.TraPhong.ImageOptions.Image = global::GUILAYER.Properties.Resources.Finish;
             this.TraPhong.Name = "TraPhong";
             this.TraPhong.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.TraPhong.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.NhanVaTraPhong_ItemClick);
@@ -175,7 +175,7 @@
             // 
             this.DatDichVu.Caption = "ĐẶT DỊCH VỤ";
             this.DatDichVu.Id = 4;
-            this.DatDichVu.ImageOptions.Image = global::GUILAYER.Properties.Resources.OrderService;
+            this.DatDichVu.ImageOptions.Image = global::GUILAYER.Properties.Resources.Order;
             this.DatDichVu.Name = "DatDichVu";
             this.DatDichVu.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.DatDichVu.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.YeuCauDichVu_ItemClick);
@@ -202,7 +202,7 @@
             // 
             this.QuanLyHoaDon.Caption = "HÓA ĐƠN";
             this.QuanLyHoaDon.Id = 9;
-            this.QuanLyHoaDon.ImageOptions.Image = global::GUILAYER.Properties.Resources.Bill;
+            this.QuanLyHoaDon.ImageOptions.Image = global::GUILAYER.Properties.Resources.Invoice;
             this.QuanLyHoaDon.Name = "QuanLyHoaDon";
             this.QuanLyHoaDon.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.QuanLyHoaDon.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.QuanLyHoaDon_ItemClick);
@@ -211,7 +211,7 @@
             // 
             this.QuanLyDichVu.Caption = "DỊCH VỤ";
             this.QuanLyDichVu.Id = 10;
-            this.QuanLyDichVu.ImageOptions.Image = global::GUILAYER.Properties.Resources.CustomerService;
+            this.QuanLyDichVu.ImageOptions.Image = global::GUILAYER.Properties.Resources.Service;
             this.QuanLyDichVu.Name = "QuanLyDichVu";
             this.QuanLyDichVu.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.QuanLyDichVu.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.QuanLyDichVu_ItemClick);
@@ -238,7 +238,7 @@
             // 
             this.QuanLyLoaiPhong.Caption = "LOẠI PHÒNG";
             this.QuanLyLoaiPhong.Id = 13;
-            this.QuanLyLoaiPhong.ImageOptions.Image = global::GUILAYER.Properties.Resources.TypeRoom;
+            this.QuanLyLoaiPhong.ImageOptions.Image = global::GUILAYER.Properties.Resources.RoomType;
             this.QuanLyLoaiPhong.Name = "QuanLyLoaiPhong";
             this.QuanLyLoaiPhong.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.QuanLyLoaiPhong.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.QuanLyLoaiPhong_ItemClick);
@@ -283,7 +283,7 @@
             // 
             this.LayPhong.Caption = "NHẬN PHÒNG";
             this.LayPhong.Id = 21;
-            this.LayPhong.ImageOptions.Image = global::GUILAYER.Properties.Resources.CheckedIn;
+            this.LayPhong.ImageOptions.Image = global::GUILAYER.Properties.Resources.Granted;
             this.LayPhong.Name = "LayPhong";
             this.LayPhong.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.LayPhong.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.NhanVaTraPhong_ItemClick);
@@ -302,7 +302,7 @@
             // 
             this.DoiPhong.Caption = "ĐỔI PHÒNG";
             this.DoiPhong.Id = 28;
-            this.DoiPhong.ImageOptions.Image = global::GUILAYER.Properties.Resources.ChangeRoom;
+            this.DoiPhong.ImageOptions.Image = global::GUILAYER.Properties.Resources.Change;
             this.DoiPhong.Name = "DoiPhong";
             this.DoiPhong.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.DoiPhong.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.YeuCauDoiPhong_ItemClick);
@@ -669,7 +669,7 @@
             this.Controls.Add(this.ThanhRibbon);
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            this.IconOptions.Image = global::GUILAYER.Properties.Resources.LogoHotel;
+            this.IconOptions.Image = global::GUILAYER.Properties.Resources.Logo;
             this.IsMdiContainer = true;
             this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);

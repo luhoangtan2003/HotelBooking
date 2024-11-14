@@ -536,7 +536,7 @@
             this.ClientSize = new System.Drawing.Size(1200, 663);
             this.Controls.Add(this.LayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
-            this.IconOptions.Image = global::GUILAYER.Properties.Resources.LogoHotel;
+            this.IconOptions.Image = global::GUILAYER.Properties.Resources.Logo;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "ThongTinTraPhongO";
