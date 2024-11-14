@@ -51,7 +51,8 @@
             this.SkinPaletteDropDownButtonItem1 = new DevExpress.XtraBars.SkinPaletteDropDownButtonItem();
             this.DoiPhong = new DevExpress.XtraBars.BarButtonItem();
             this.MaNguon = new DevExpress.XtraBars.BarButtonItem();
-            this.Email = new DevExpress.XtraBars.BarButtonItem();
+            this.Gmail = new DevExpress.XtraBars.BarButtonItem();
+            this.TaiKhoanGoogle = new DevExpress.XtraBars.BarButtonItem();
             this.TrangDichVu = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.RibbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.TrangQuanLy = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -139,10 +140,11 @@
             this.SkinPaletteDropDownButtonItem1,
             this.DoiPhong,
             this.MaNguon,
-            this.Email});
+            this.Gmail,
+            this.TaiKhoanGoogle});
             this.ThanhRibbon.Location = new System.Drawing.Point(0, 0);
             this.ThanhRibbon.Margin = new System.Windows.Forms.Padding(264, 231, 264, 231);
-            this.ThanhRibbon.MaxItemId = 31;
+            this.ThanhRibbon.MaxItemId = 32;
             this.ThanhRibbon.Name = "ThanhRibbon";
             this.ThanhRibbon.OptionsMenuMinWidth = 24399;
             this.ThanhRibbon.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
@@ -155,120 +157,135 @@
             // 
             this.DatPhong.Caption = "ĐẶT PHÒNG";
             this.DatPhong.Id = 1;
-            this.DatPhong.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("DatPhong.ImageOptions.SvgImage")));
+            this.DatPhong.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("DatPhong.ImageOptions.Image")));
             this.DatPhong.Name = "DatPhong";
+            this.DatPhong.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.DatPhong.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.DichVuDatPhong_ItemClick);
             // 
             // TraPhong
             // 
             this.TraPhong.Caption = "TRẢ PHÒNG";
             this.TraPhong.Id = 3;
-            this.TraPhong.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("TraPhong.ImageOptions.SvgImage")));
+            this.TraPhong.ImageOptions.Image = global::GUILAYER.Properties.Resources.CheckedOut;
             this.TraPhong.Name = "TraPhong";
+            this.TraPhong.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.TraPhong.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.NhanVaTraPhong_ItemClick);
             // 
             // DatDichVu
             // 
             this.DatDichVu.Caption = "ĐẶT DỊCH VỤ";
             this.DatDichVu.Id = 4;
-            this.DatDichVu.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("DatDichVu.ImageOptions.SvgImage")));
+            this.DatDichVu.ImageOptions.Image = global::GUILAYER.Properties.Resources.OrderService;
             this.DatDichVu.Name = "DatDichVu";
+            this.DatDichVu.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.DatDichVu.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.YeuCauDichVu_ItemClick);
             // 
             // QuanLyPhongNghi
             // 
             this.QuanLyPhongNghi.Caption = "PHÒNG";
             this.QuanLyPhongNghi.Id = 6;
-            this.QuanLyPhongNghi.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("QuanLyPhongNghi.ImageOptions.SvgImage")));
+            this.QuanLyPhongNghi.ImageOptions.Image = global::GUILAYER.Properties.Resources.Room;
             this.QuanLyPhongNghi.Name = "QuanLyPhongNghi";
+            this.QuanLyPhongNghi.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.QuanLyPhongNghi.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.QuanLyPhongNghi_ItemClick);
             // 
             // QuanLyKhachHang
             // 
             this.QuanLyKhachHang.Caption = "KHÁCH";
             this.QuanLyKhachHang.Id = 8;
-            this.QuanLyKhachHang.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("QuanLyKhachHang.ImageOptions.SvgImage")));
+            this.QuanLyKhachHang.ImageOptions.Image = global::GUILAYER.Properties.Resources.Customer;
             this.QuanLyKhachHang.Name = "QuanLyKhachHang";
+            this.QuanLyKhachHang.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.QuanLyKhachHang.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.QuanLyKhachHang_ItemClick);
             // 
             // QuanLyHoaDon
             // 
             this.QuanLyHoaDon.Caption = "HÓA ĐƠN";
             this.QuanLyHoaDon.Id = 9;
-            this.QuanLyHoaDon.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("QuanLyHoaDon.ImageOptions.SvgImage")));
+            this.QuanLyHoaDon.ImageOptions.Image = global::GUILAYER.Properties.Resources.Bill;
             this.QuanLyHoaDon.Name = "QuanLyHoaDon";
+            this.QuanLyHoaDon.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.QuanLyHoaDon.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.QuanLyHoaDon_ItemClick);
             // 
             // QuanLyDichVu
             // 
             this.QuanLyDichVu.Caption = "DỊCH VỤ";
             this.QuanLyDichVu.Id = 10;
-            this.QuanLyDichVu.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("QuanLyDichVu.ImageOptions.SvgImage")));
+            this.QuanLyDichVu.ImageOptions.Image = global::GUILAYER.Properties.Resources.CustomerService;
             this.QuanLyDichVu.Name = "QuanLyDichVu";
+            this.QuanLyDichVu.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.QuanLyDichVu.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.QuanLyDichVu_ItemClick);
             // 
             // ThongKeDoanhThu
             // 
             this.ThongKeDoanhThu.Caption = "LỢI NHUẬN";
             this.ThongKeDoanhThu.Id = 11;
-            this.ThongKeDoanhThu.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("ThongKeDoanhThu.ImageOptions.SvgImage")));
+            this.ThongKeDoanhThu.ImageOptions.Image = global::GUILAYER.Properties.Resources.Revenue;
             this.ThongKeDoanhThu.Name = "ThongKeDoanhThu";
+            this.ThongKeDoanhThu.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.ThongKeDoanhThu.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.QuanLyBaoCao_ItemClick);
             // 
             // QuanLyTang
             // 
             this.QuanLyTang.Caption = "TẦNG";
             this.QuanLyTang.Id = 12;
-            this.QuanLyTang.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("QuanLyTang.ImageOptions.SvgImage")));
+            this.QuanLyTang.ImageOptions.Image = global::GUILAYER.Properties.Resources.Floor;
             this.QuanLyTang.Name = "QuanLyTang";
+            this.QuanLyTang.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.QuanLyTang.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.QuanLyTangHotel_ItemClick);
             // 
             // QuanLyLoaiPhong
             // 
             this.QuanLyLoaiPhong.Caption = "LOẠI PHÒNG";
             this.QuanLyLoaiPhong.Id = 13;
-            this.QuanLyLoaiPhong.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("QuanLyLoaiPhong.ImageOptions.SvgImage")));
+            this.QuanLyLoaiPhong.ImageOptions.Image = global::GUILAYER.Properties.Resources.TypeRoom;
             this.QuanLyLoaiPhong.Name = "QuanLyLoaiPhong";
+            this.QuanLyLoaiPhong.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.QuanLyLoaiPhong.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.QuanLyLoaiPhong_ItemClick);
             // 
             // SaoLuu
             // 
             this.SaoLuu.Caption = "SAO LƯU";
             this.SaoLuu.Id = 14;
-            this.SaoLuu.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("SaoLuu.ImageOptions.SvgImage")));
+            this.SaoLuu.ImageOptions.Image = global::GUILAYER.Properties.Resources.Backup;
             this.SaoLuu.Name = "SaoLuu";
+            this.SaoLuu.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.SaoLuu.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.KhoiPhucSaoLuu_ItemClick);
             // 
             // KhoiPhuc
             // 
             this.KhoiPhuc.Caption = "KHÔI PHỤC";
             this.KhoiPhuc.Id = 15;
-            this.KhoiPhuc.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("KhoiPhuc.ImageOptions.SvgImage")));
+            this.KhoiPhuc.ImageOptions.Image = global::GUILAYER.Properties.Resources.Restore;
             this.KhoiPhuc.Name = "KhoiPhuc";
+            this.KhoiPhuc.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.KhoiPhuc.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.KhoiPhucSaoLuu_ItemClick);
             // 
             // GioiThieu
             // 
             this.GioiThieu.Caption = "GIỚI THIỆU";
             this.GioiThieu.Id = 16;
-            this.GioiThieu.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("GioiThieu.ImageOptions.LargeImage")));
+            this.GioiThieu.ImageOptions.Image = global::GUILAYER.Properties.Resources.Introductions;
             this.GioiThieu.Name = "GioiThieu";
+            this.GioiThieu.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.GioiThieu.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.Introduction_ItemClick);
             // 
             // QuanLyLoaiDV
             // 
             this.QuanLyLoaiDV.Caption = "LOẠI DỊCH VỤ";
             this.QuanLyLoaiDV.Id = 20;
-            this.QuanLyLoaiDV.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("QuanLyLoaiDV.ImageOptions.SvgImage")));
+            this.QuanLyLoaiDV.ImageOptions.Image = global::GUILAYER.Properties.Resources.ServiceType;
             this.QuanLyLoaiDV.Name = "QuanLyLoaiDV";
+            this.QuanLyLoaiDV.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.QuanLyLoaiDV.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.QuanLyLoaiDichVu_ItemClick);
             // 
             // LayPhong
             // 
             this.LayPhong.Caption = "NHẬN PHÒNG";
             this.LayPhong.Id = 21;
-            this.LayPhong.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("LayPhong.ImageOptions.SvgImage")));
+            this.LayPhong.ImageOptions.Image = global::GUILAYER.Properties.Resources.CheckedIn;
             this.LayPhong.Name = "LayPhong";
+            this.LayPhong.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.LayPhong.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.NhanVaTraPhong_ItemClick);
             // 
             // SkinDropDownButtonItem1
@@ -285,25 +302,37 @@
             // 
             this.DoiPhong.Caption = "ĐỔI PHÒNG";
             this.DoiPhong.Id = 28;
-            this.DoiPhong.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("DoiPhong.ImageOptions.SvgImage")));
+            this.DoiPhong.ImageOptions.Image = global::GUILAYER.Properties.Resources.ChangeRoom;
             this.DoiPhong.Name = "DoiPhong";
+            this.DoiPhong.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.DoiPhong.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.YeuCauDoiPhong_ItemClick);
             // 
             // MaNguon
             // 
             this.MaNguon.Caption = "MÃ NGUỒN";
             this.MaNguon.Id = 29;
-            this.MaNguon.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("MaNguon.ImageOptions.LargeImage")));
+            this.MaNguon.ImageOptions.Image = global::GUILAYER.Properties.Resources.Github;
             this.MaNguon.Name = "MaNguon";
+            this.MaNguon.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.MaNguon.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.MaNguonGithub_ItemClick);
             // 
-            // Email
+            // Gmail
             // 
-            this.Email.Caption = "EMAIL";
-            this.Email.Id = 30;
-            this.Email.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("Email.ImageOptions.LargeImage")));
-            this.Email.Name = "Email";
-            this.Email.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.QuanLyMailbox_ItemClick);
+            this.Gmail.Caption = "GMAIL";
+            this.Gmail.Id = 30;
+            this.Gmail.ImageOptions.Image = global::GUILAYER.Properties.Resources.Gmail;
+            this.Gmail.Name = "Gmail";
+            this.Gmail.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.Gmail.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.QuanLyMailbox_ItemClick);
+            // 
+            // TaiKhoanGoogle
+            // 
+            this.TaiKhoanGoogle.Caption = "TÀI KHOẢN";
+            this.TaiKhoanGoogle.Id = 31;
+            this.TaiKhoanGoogle.ImageOptions.Image = global::GUILAYER.Properties.Resources.Google;
+            this.TaiKhoanGoogle.Name = "TaiKhoanGoogle";
+            this.TaiKhoanGoogle.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.TaiKhoanGoogle.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.TaiKhoanGoogle_ItemClick);
             // 
             // TrangDichVu
             // 
@@ -355,7 +384,7 @@
             this.RibbonPageGroup4.ItemLinks.Add(this.QuanLyKhachHang, true);
             this.RibbonPageGroup4.ItemLinks.Add(this.QuanLyHoaDon);
             this.RibbonPageGroup4.ItemLinks.Add(this.ThongKeDoanhThu);
-            this.RibbonPageGroup4.ItemLinks.Add(this.Email);
+            this.RibbonPageGroup4.ItemLinks.Add(this.Gmail);
             this.RibbonPageGroup4.Name = "RibbonPageGroup4";
             this.RibbonPageGroup4.Text = "MỤC KHÁC";
             // 
@@ -375,6 +404,7 @@
             this.RibbonPageGroup5.ItemLinks.Add(this.KhoiPhuc);
             this.RibbonPageGroup5.ItemLinks.Add(this.GioiThieu);
             this.RibbonPageGroup5.ItemLinks.Add(this.MaNguon);
+            this.RibbonPageGroup5.ItemLinks.Add(this.TaiKhoanGoogle);
             this.RibbonPageGroup5.Name = "RibbonPageGroup5";
             this.RibbonPageGroup5.Text = "HỆ THỐNG";
             // 
@@ -732,6 +762,7 @@
         private DevExpress.XtraEditors.ListBoxControl DanhSachDenHanTraPhong;
         private DevExpress.XtraEditors.ListBoxControl DanhSachQuaHanTraPhong;
         private DevExpress.XtraBars.BarButtonItem MaNguon;
-        private DevExpress.XtraBars.BarButtonItem Email;
+        private DevExpress.XtraBars.BarButtonItem Gmail;
+        private DevExpress.XtraBars.BarButtonItem TaiKhoanGoogle;
     }
 }

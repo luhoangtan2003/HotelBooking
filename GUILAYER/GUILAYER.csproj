@@ -102,8 +102,10 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ChuongThongBaoForm.cs">
@@ -177,6 +179,12 @@
     </Compile>
     <Compile Include="KhoiPhucSaoLuuForm.Designer.cs">
       <DependentUpon>KhoiPhucSaoLuuForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GoogleAccountForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GoogleAccountForm.Designer.cs">
+      <DependentUpon>GoogleAccountForm.cs</DependentUpon>
     </Compile>
     <Compile Include="ThanhToanBillForm.cs">
       <SubType>Form</SubType>
@@ -338,6 +346,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DuAnMaNguonGitForm.resx">
       <DependentUpon>DuAnMaNguonGitForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GoogleAccountForm.resx">
+      <DependentUpon>GoogleAccountForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HoaDonPhongReport.resx">
       <DependentUpon>HoaDonPhongReport.cs</DependentUpon>
@@ -519,6 +530,63 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Transaction.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Google.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Github.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TypeRoom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gmail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Introductions.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CustomerService.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Revenue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bill.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Floor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Room.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ServiceType.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Customer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Booking.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CheckedIn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CheckedOut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChangeRoom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OrderService.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Backup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Restore.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

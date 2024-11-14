@@ -203,5 +203,10 @@ namespace GUILAYER
         {
             OpenForm(typeof(QuanLyMailboxForm));
         }
+
+        private void TaiKhoanGoogle_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            OpenForm(typeof(GoogleAccountForm));
+        }
     }
 }
