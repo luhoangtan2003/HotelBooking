@@ -44,15 +44,15 @@
             this.ThungChuaGit.TabIndex = 0;
             this.ThungChuaGit.ZoomFactor = 1D;
             // 
-            // DuAnMaNguonForm
+            // DuAnMaNguonGitForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1883, 741);
             this.Controls.Add(this.ThungChuaGit);
             this.IconOptions.Image = global::GUILAYER.Properties.Resources.LogoHotel;
-            this.Name = "DuAnMaNguonForm";
-            this.Text = "THÙNG CHỨA MÃ NGUỒN";
+            this.Name = "DuAnMaNguonGitForm";
+            this.Text = "MÃ NGUỒN";
             this.Load += new System.EventHandler(this.DuAnMaNguonGitForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ThungChuaGit)).EndInit();
             this.ResumeLayout(false);

@@ -4,11 +4,18 @@ using MailKit.Security;
 using MimeKit;
 using System;
 using System.Text.RegularExpressions;
+using System.Windows.Forms;
 
 namespace LOGICLAYER
 {
     public class NoticeToCustomers
     {
+        String MailUsername = Environment.GetEnvironmentVariable("MailUsername");
+
+        String MailPassword = Environment.GetEnvironmentVariable("MailPassword");
+
+        String HotelSoftwareName = Application.ProductName;
+
         public SmtpClient SetConnect()
         {
             SmtpClient Client = new();
@@ -28,7 +35,7 @@ namespace LOGICLAYER
         {
             using SmtpClient Client = SetConnect();
 
-            Client.Authenticate("luhoangtan102903@gmail.com", "VSVBJAYBAHDFVFSZ");
+            Client.Authenticate(MailUsername, MailPassword);
 
             Client.Send(MessageBox);
 
@@ -46,7 +53,7 @@ namespace LOGICLAYER
         {
             MimeMessage Message = new MimeMessage();
 
-            MailboxAddress SenderAddress = new("Lư Hoàng Tấn ", "luhoangtan102903@gmail.com");
+            MailboxAddress SenderAddress = new MailboxAddress(HotelSoftwareName, MailUsername);
 
             Message.From.Add(SenderAddress);
 

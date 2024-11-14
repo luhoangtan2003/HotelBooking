@@ -52,7 +52,7 @@
             this.Controls.Add(this.Mailbox);
             this.IconOptions.Image = global::GUILAYER.Properties.Resources.LogoHotel;
             this.Name = "QuanLyMailboxForm";
-            this.Text = "Gmail";
+            this.Text = "GMAIL";
             this.Load += new System.EventHandler(this.QuanLyMailboxForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Mailbox)).EndInit();
             this.ResumeLayout(false);

@@ -17,10 +17,7 @@ namespace GUILAYER
         {
             String WVData = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), "LHT Hotel", "WebView2 Data");
 
-            if (!Directory.Exists(WVData))
-            {
-                Directory.CreateDirectory(WVData);
-            }
+            Directory.CreateDirectory(WVData);
 
             CoreWebView2Environment Envi = await CoreWebView2Environment.CreateAsync(null, WVData);
 
@@ -37,11 +34,15 @@ namespace GUILAYER
                 else
                 {
                     HamChucNang.ShowError("URL không hợp lệ.");
+
+                    Close();
                 }
             }
             else
             {
                 HamChucNang.ShowError("Microsoft WebView2 chưa được cài đặt trên máy của bạn!!!");
+
+                Close();
             }
         }
     }
