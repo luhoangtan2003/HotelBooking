@@ -4,6 +4,8 @@ using System;
 using System.IO;
 using System.Linq;
 
+#pragma warning disable CRR0034, CRR0033, CRR0029
+
 namespace GUILAYER
 {
     public partial class DuAnMaNguonGitForm : DevExpress.XtraEditors.XtraForm
@@ -33,7 +35,7 @@ namespace GUILAYER
                 }
                 else
                 {
-                    HamChucNang.ShowError("URL không hợp lệ.");
+                    HamChucNang.ShowError("URL không hợp lệ");
 
                     Close();
                 }

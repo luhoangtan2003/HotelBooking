@@ -75,9 +75,6 @@
             this.PhanTrang = new DevExpress.XtraTab.XtraTabControl();
             this.TrangHoaDonPhongO = new DevExpress.XtraTab.XtraTabPage();
             this.BangHoaDonPhongO = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.TrangHoaDonDichVu = new DevExpress.XtraTab.XtraTabPage();
-            this.LabelControl7 = new DevExpress.XtraEditors.LabelControl();
-            this.BangTuyChonHoaDonPhong = new DevExpress.XtraBars.PopupMenu(this.components);
             this.MAHOADONHDPN = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MAPHONGDATHDPN = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MAPHONGHDPN = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -92,6 +89,9 @@
             this.TENTHOIDIEMHDPN = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MATRANGTHAIHDPN = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TENTRANGTHAIHDPN = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TrangHoaDonDichVu = new DevExpress.XtraTab.XtraTabPage();
+            this.LabelControl7 = new DevExpress.XtraEditors.LabelControl();
+            this.BangTuyChonHoaDonPhong = new DevExpress.XtraBars.PopupMenu(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.BarManager)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DockManager)).BeginInit();
             this.ThanhBoLoc.SuspendLayout();
@@ -542,7 +542,7 @@
             // 
             this.PhanTrang.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PhanTrang.Location = new System.Drawing.Point(310, 21);
-            this.PhanTrang.Margin = new System.Windows.Forms.Padding(10);
+            this.PhanTrang.Margin = new System.Windows.Forms.Padding(15, 15, 15, 15);
             this.PhanTrang.Name = "PhanTrang";
             this.PhanTrang.SelectedTabPage = this.TrangHoaDonPhongO;
             this.PhanTrang.Size = new System.Drawing.Size(1573, 720);
@@ -557,7 +557,7 @@
             this.TrangHoaDonPhongO.Appearance.HeaderActive.Options.UseFont = true;
             this.TrangHoaDonPhongO.Controls.Add(this.BangHoaDonPhongO);
             this.TrangHoaDonPhongO.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("TrangHoaDonPhongO.ImageOptions.SvgImage")));
-            this.TrangHoaDonPhongO.Margin = new System.Windows.Forms.Padding(10);
+            this.TrangHoaDonPhongO.Margin = new System.Windows.Forms.Padding(15, 15, 15, 15);
             this.TrangHoaDonPhongO.Name = "TrangHoaDonPhongO";
             this.TrangHoaDonPhongO.Size = new System.Drawing.Size(1571, 662);
             this.TrangHoaDonPhongO.Text = "HÓA ĐƠN PHÒNG Ở";
@@ -569,12 +569,12 @@
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
             this.BangHoaDonPhongO.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.BangHoaDonPhongO.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.BangHoaDonPhongO.BackgroundColor = System.Drawing.Color.White;
+            this.BangHoaDonPhongO.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(219)))), ((int)(((byte)(233)))));
             this.BangHoaDonPhongO.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.BangHoaDonPhongO.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
             this.BangHoaDonPhongO.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(234)))), ((int)(((byte)(237)))));
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(107)))), ((int)(((byte)(153)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
@@ -610,7 +610,7 @@
             this.BangHoaDonPhongO.EnableHeadersVisualStyles = false;
             this.BangHoaDonPhongO.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(241)))), ((int)(((byte)(243)))));
             this.BangHoaDonPhongO.Location = new System.Drawing.Point(0, 0);
-            this.BangHoaDonPhongO.Margin = new System.Windows.Forms.Padding(10);
+            this.BangHoaDonPhongO.Margin = new System.Windows.Forms.Padding(15, 15, 15, 15);
             this.BangHoaDonPhongO.MultiSelect = false;
             this.BangHoaDonPhongO.Name = "BangHoaDonPhongO";
             this.BangHoaDonPhongO.ReadOnly = true;
@@ -627,9 +627,9 @@
             this.BangHoaDonPhongO.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
             this.BangHoaDonPhongO.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
             this.BangHoaDonPhongO.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.BangHoaDonPhongO.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.BangHoaDonPhongO.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(219)))), ((int)(((byte)(233)))));
             this.BangHoaDonPhongO.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(241)))), ((int)(((byte)(243)))));
-            this.BangHoaDonPhongO.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(234)))), ((int)(((byte)(237)))));
+            this.BangHoaDonPhongO.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(107)))), ((int)(((byte)(153)))));
             this.BangHoaDonPhongO.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.BangHoaDonPhongO.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BangHoaDonPhongO.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.Black;
@@ -644,34 +644,6 @@
             this.BangHoaDonPhongO.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(241)))), ((int)(((byte)(243)))));
             this.BangHoaDonPhongO.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
             this.BangHoaDonPhongO.MouseClick += new System.Windows.Forms.MouseEventHandler(this.BangHoaDonPhong_MouseClick);
-            // 
-            // TrangHoaDonDichVu
-            // 
-            this.TrangHoaDonDichVu.Appearance.HeaderActive.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold);
-            this.TrangHoaDonDichVu.Appearance.HeaderActive.Options.UseFont = true;
-            this.TrangHoaDonDichVu.Controls.Add(this.LabelControl7);
-            this.TrangHoaDonDichVu.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("TrangHoaDonDichVu.ImageOptions.SvgImage")));
-            this.TrangHoaDonDichVu.Margin = new System.Windows.Forms.Padding(10);
-            this.TrangHoaDonDichVu.Name = "TrangHoaDonDichVu";
-            this.TrangHoaDonDichVu.Size = new System.Drawing.Size(1571, 662);
-            this.TrangHoaDonDichVu.Text = "HÓA ĐƠN DỊCH VỤ";
-            // 
-            // LabelControl7
-            // 
-            this.LabelControl7.Appearance.Font = new System.Drawing.Font("Verdana", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelControl7.Appearance.Options.UseFont = true;
-            this.LabelControl7.Location = new System.Drawing.Point(530, 311);
-            this.LabelControl7.Name = "LabelControl7";
-            this.LabelControl7.Size = new System.Drawing.Size(510, 26);
-            this.LabelControl7.TabIndex = 4;
-            this.LabelControl7.Text = "CHỨC NĂNG NÀY CHƯA ĐƯỢC XÂY DỰNG";
-            // 
-            // BangTuyChonHoaDonPhong
-            // 
-            this.BangTuyChonHoaDonPhong.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.InPopOn)});
-            this.BangTuyChonHoaDonPhong.Manager = this.BarManager;
-            this.BangTuyChonHoaDonPhong.Name = "BangTuyChonHoaDonPhong";
             // 
             // MAHOADONHDPN
             // 
@@ -804,6 +776,35 @@
             this.TENTRANGTHAIHDPN.MinimumWidth = 6;
             this.TENTRANGTHAIHDPN.Name = "TENTRANGTHAIHDPN";
             this.TENTRANGTHAIHDPN.ReadOnly = true;
+            // 
+            // TrangHoaDonDichVu
+            // 
+            this.TrangHoaDonDichVu.Appearance.HeaderActive.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold);
+            this.TrangHoaDonDichVu.Appearance.HeaderActive.Options.UseFont = true;
+            this.TrangHoaDonDichVu.Controls.Add(this.LabelControl7);
+            this.TrangHoaDonDichVu.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("TrangHoaDonDichVu.ImageOptions.SvgImage")));
+            this.TrangHoaDonDichVu.Margin = new System.Windows.Forms.Padding(15, 15, 15, 15);
+            this.TrangHoaDonDichVu.Name = "TrangHoaDonDichVu";
+            this.TrangHoaDonDichVu.Size = new System.Drawing.Size(1964, 842);
+            this.TrangHoaDonDichVu.Text = "HÓA ĐƠN DỊCH VỤ";
+            // 
+            // LabelControl7
+            // 
+            this.LabelControl7.Appearance.Font = new System.Drawing.Font("Verdana", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelControl7.Appearance.Options.UseFont = true;
+            this.LabelControl7.Location = new System.Drawing.Point(828, 486);
+            this.LabelControl7.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.LabelControl7.Name = "LabelControl7";
+            this.LabelControl7.Size = new System.Drawing.Size(510, 26);
+            this.LabelControl7.TabIndex = 4;
+            this.LabelControl7.Text = "CHỨC NĂNG NÀY CHƯA ĐƯỢC XÂY DỰNG";
+            // 
+            // BangTuyChonHoaDonPhong
+            // 
+            this.BangTuyChonHoaDonPhong.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.InPopOn)});
+            this.BangTuyChonHoaDonPhong.Manager = this.BarManager;
+            this.BangTuyChonHoaDonPhong.Name = "BangTuyChonHoaDonPhong";
             // 
             // ThanhToanBillForm
             // 

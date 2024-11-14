@@ -117,7 +117,7 @@
             // ThanhRibbon
             // 
             this.ThanhRibbon.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ThanhRibbon.EmptyAreaImageOptions.ImagePadding = new System.Windows.Forms.Padding(2245, 2019, 2245, 2019);
+            this.ThanhRibbon.EmptyAreaImageOptions.ImagePadding = new System.Windows.Forms.Padding(2806, 2524, 2806, 2524);
             this.ThanhRibbon.ExpandCollapseItem.Id = 0;
             this.ThanhRibbon.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.ThanhRibbon.ExpandCollapseItem,
@@ -143,10 +143,10 @@
             this.Gmail,
             this.TaiKhoanGoogle});
             this.ThanhRibbon.Location = new System.Drawing.Point(0, 0);
-            this.ThanhRibbon.Margin = new System.Windows.Forms.Padding(264, 231, 264, 231);
+            this.ThanhRibbon.Margin = new System.Windows.Forms.Padding(330, 289, 330, 289);
             this.ThanhRibbon.MaxItemId = 32;
             this.ThanhRibbon.Name = "ThanhRibbon";
-            this.ThanhRibbon.OptionsMenuMinWidth = 24399;
+            this.ThanhRibbon.OptionsMenuMinWidth = 30499;
             this.ThanhRibbon.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.TrangDichVu,
             this.TrangQuanLy,
@@ -445,7 +445,7 @@
             // 
             // HideContainerRight
             // 
-            this.HideContainerRight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(235)))), ((int)(((byte)(255)))));
+            this.HideContainerRight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(219)))), ((int)(((byte)(233)))));
             this.HideContainerRight.Controls.Add(this.ThongBaoLayPhong);
             this.HideContainerRight.Controls.Add(this.ThongBaoTraPhong);
             this.HideContainerRight.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -461,7 +461,7 @@
             this.ThongBaoLayPhong.Dock = DevExpress.XtraBars.Docking.DockingStyle.Right;
             this.ThongBaoLayPhong.FloatSize = new System.Drawing.Size(310, 819);
             this.ThongBaoLayPhong.ID = new System.Guid("e0ccc5af-5a52-4991-9e5b-ab229399694b");
-            this.ThongBaoLayPhong.Location = new System.Drawing.Point(0, 0);
+            this.ThongBaoLayPhong.Location = new System.Drawing.Point(1580, 202);
             this.ThongBaoLayPhong.Name = "ThongBaoLayPhong";
             this.ThongBaoLayPhong.Options.ShowCloseButton = false;
             this.ThongBaoLayPhong.OriginalSize = new System.Drawing.Size(310, 200);
@@ -535,7 +535,7 @@
             this.ThongBaoTraPhong.Dock = DevExpress.XtraBars.Docking.DockingStyle.Right;
             this.ThongBaoTraPhong.FloatSize = new System.Drawing.Size(310, 819);
             this.ThongBaoTraPhong.ID = new System.Guid("ce60e650-2b5e-4bc2-9fc4-ae1af17ed454");
-            this.ThongBaoTraPhong.Location = new System.Drawing.Point(0, 0);
+            this.ThongBaoTraPhong.Location = new System.Drawing.Point(1580, 202);
             this.ThongBaoTraPhong.Name = "ThongBaoTraPhong";
             this.ThongBaoTraPhong.Options.ShowCloseButton = false;
             this.ThongBaoTraPhong.OriginalSize = new System.Drawing.Size(310, 200);

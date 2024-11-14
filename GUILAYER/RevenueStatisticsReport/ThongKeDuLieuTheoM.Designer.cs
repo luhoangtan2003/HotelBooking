@@ -157,6 +157,7 @@
             // 
             // BieuDoPhongO
             // 
+            this.BieuDoPhongO.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(219)))), ((int)(((byte)(233)))));
             this.BieuDoPhongO.BorderOptions.Visibility = DevExpress.Utils.DefaultBoolean.False;
             this.BieuDoPhongO.CrosshairOptions.ShowArgumentLine = false;
             this.BieuDoPhongO.Dock = System.Windows.Forms.DockStyle.Fill;

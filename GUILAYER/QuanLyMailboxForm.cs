@@ -4,6 +4,8 @@ using System;
 using System.IO;
 using System.Linq;
 
+#pragma warning disable CRR0034, CRR0033, CRR0029
+
 namespace GUILAYER
 {
     public partial class QuanLyMailboxForm : DevExpress.XtraEditors.XtraForm
