@@ -50,7 +50,6 @@
             this.SkinDropDownButtonItem1 = new DevExpress.XtraBars.SkinDropDownButtonItem();
             this.SkinPaletteDropDownButtonItem1 = new DevExpress.XtraBars.SkinPaletteDropDownButtonItem();
             this.DoiPhong = new DevExpress.XtraBars.BarButtonItem();
-            this.MaNguon = new DevExpress.XtraBars.BarButtonItem();
             this.Gmail = new DevExpress.XtraBars.BarButtonItem();
             this.TaiKhoanGoogle = new DevExpress.XtraBars.BarButtonItem();
             this.TrangDichVu = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -139,7 +138,6 @@
             this.SkinDropDownButtonItem1,
             this.SkinPaletteDropDownButtonItem1,
             this.DoiPhong,
-            this.MaNguon,
             this.Gmail,
             this.TaiKhoanGoogle});
             this.ThanhRibbon.Location = new System.Drawing.Point(0, 0);
@@ -265,7 +263,7 @@
             // 
             this.GioiThieu.Caption = "GIỚI THIỆU";
             this.GioiThieu.Id = 16;
-            this.GioiThieu.ImageOptions.Image = global::GUILAYER.Properties.Resources.Introductions;
+            this.GioiThieu.ImageOptions.Image = global::GUILAYER.Properties.Resources.Light;
             this.GioiThieu.Name = "GioiThieu";
             this.GioiThieu.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.GioiThieu.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.Introduction_ItemClick);
@@ -306,15 +304,6 @@
             this.DoiPhong.Name = "DoiPhong";
             this.DoiPhong.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.DoiPhong.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.YeuCauDoiPhong_ItemClick);
-            // 
-            // MaNguon
-            // 
-            this.MaNguon.Caption = "MÃ NGUỒN";
-            this.MaNguon.Id = 29;
-            this.MaNguon.ImageOptions.Image = global::GUILAYER.Properties.Resources.Github;
-            this.MaNguon.Name = "MaNguon";
-            this.MaNguon.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            this.MaNguon.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.MaNguonGithub_ItemClick);
             // 
             // Gmail
             // 
@@ -403,7 +392,6 @@
             this.RibbonPageGroup5.ItemLinks.Add(this.SaoLuu);
             this.RibbonPageGroup5.ItemLinks.Add(this.KhoiPhuc);
             this.RibbonPageGroup5.ItemLinks.Add(this.GioiThieu);
-            this.RibbonPageGroup5.ItemLinks.Add(this.MaNguon);
             this.RibbonPageGroup5.ItemLinks.Add(this.TaiKhoanGoogle);
             this.RibbonPageGroup5.Name = "RibbonPageGroup5";
             this.RibbonPageGroup5.Text = "HỆ THỐNG";
@@ -761,7 +749,6 @@
         private DevExpress.XtraEditors.ListBoxControl DanhSachQuaHanLayPhong;
         private DevExpress.XtraEditors.ListBoxControl DanhSachDenHanTraPhong;
         private DevExpress.XtraEditors.ListBoxControl DanhSachQuaHanTraPhong;
-        private DevExpress.XtraBars.BarButtonItem MaNguon;
         private DevExpress.XtraBars.BarButtonItem Gmail;
         private DevExpress.XtraBars.BarButtonItem TaiKhoanGoogle;
     }

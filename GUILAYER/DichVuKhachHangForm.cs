@@ -7,9 +7,9 @@ using System.Windows.Forms;
 
 namespace GUILAYER
 {
-    public partial class DichVuForm : DevExpress.XtraEditors.XtraForm
+    public partial class DichVuKhachHangForm : DevExpress.XtraEditors.XtraForm
     {
-        public DichVuForm()
+        public DichVuKhachHangForm()
         {
             HamChucNang.BangDichVu += DataLoading;
 

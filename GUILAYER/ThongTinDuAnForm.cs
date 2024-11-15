@@ -5,9 +5,9 @@ using System.Windows.Forms;
 
 namespace GUILAYER
 {
-    public partial class HuongDanForm : DevExpress.XtraEditors.XtraForm
+    public partial class ThongTinDuAnForm : DevExpress.XtraEditors.XtraForm
     {
-        public HuongDanForm() { InitializeComponent(); }
+        public ThongTinDuAnForm() { InitializeComponent(); }
 
         String TempFilePath;
 
@@ -15,7 +15,7 @@ namespace GUILAYER
         {
             TempFilePath = Path.Combine(Path.GetTempPath(), "Introduction.PDF");
 
-            File.WriteAllBytes(TempFilePath, Properties.Resources.Introduction);
+            File.WriteAllBytes(TempFilePath, Properties.Resources.Instruction);
 
             PDF.LoadDocument(TempFilePath);
         }

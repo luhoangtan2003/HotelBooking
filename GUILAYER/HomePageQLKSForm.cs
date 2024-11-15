@@ -161,12 +161,12 @@ namespace GUILAYER
 
         private void QuanLyDichVu_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            OpenForm(typeof(DichVuForm));
+            OpenForm(typeof(DichVuKhachHangForm));
         }
 
         private void Introduction_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            OpenForm(typeof(HuongDanForm));
+            OpenForm(typeof(ThongTinDuAnForm));
         }
 
         private void YeuCauDichVu_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -191,12 +191,7 @@ namespace GUILAYER
 
         private void YeuCauDoiPhong_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            OpenForm(typeof(ChuyenPhongOForm));
-        }
-
-        private void MaNguonGithub_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            OpenForm(typeof(DuAnMaNguonGitForm));
+            OpenForm(typeof(ChuyenPhongForm));
         }
 
         private void QuanLyMailbox_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)

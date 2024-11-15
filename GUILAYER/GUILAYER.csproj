@@ -120,17 +120,17 @@
     <Compile Include="DatPhongForm.Designer.cs">
       <DependentUpon>DatPhongForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="DichVuForm.cs">
+    <Compile Include="DichVuKhachHangForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DichVuForm.Designer.cs">
-      <DependentUpon>DichVuForm.cs</DependentUpon>
+    <Compile Include="DichVuKhachHangForm.Designer.cs">
+      <DependentUpon>DichVuKhachHangForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="ChuyenPhongOForm.cs">
+    <Compile Include="ChuyenPhongForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ChuyenPhongOForm.Designer.cs">
-      <DependentUpon>ChuyenPhongOForm.cs</DependentUpon>
+    <Compile Include="ChuyenPhongForm.Designer.cs">
+      <DependentUpon>ChuyenPhongForm.cs</DependentUpon>
     </Compile>
     <Compile Include="QuanLyMailboxForm.cs">
       <SubType>Form</SubType>
@@ -143,12 +143,6 @@
     </Compile>
     <Compile Include="HoaDonPhongReport.Designer.cs">
       <DependentUpon>HoaDonPhongReport.cs</DependentUpon>
-    </Compile>
-    <Compile Include="DuAnMaNguonGitForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DuAnMaNguonGitForm.Designer.cs">
-      <DependentUpon>DuAnMaNguonGitForm.cs</DependentUpon>
     </Compile>
     <Compile Include="RevenueStatisticsReport\PhanTichDuLieuTheoD.cs">
       <SubType>UserControl</SubType>
@@ -192,11 +186,11 @@
     <Compile Include="ThanhToanBillForm.Designer.cs">
       <DependentUpon>ThanhToanBillForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="HuongDanForm.cs">
+    <Compile Include="ThongTinDuAnForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="HuongDanForm.Designer.cs">
-      <DependentUpon>HuongDanForm.cs</DependentUpon>
+    <Compile Include="ThongTinDuAnForm.Designer.cs">
+      <DependentUpon>ThongTinDuAnForm.cs</DependentUpon>
     </Compile>
     <Compile Include="KhachHangForm.cs">
       <SubType>Form</SubType>
@@ -338,14 +332,11 @@
       <DependentUpon>DatPhongForm.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="DichVuForm.resx">
-      <DependentUpon>DichVuForm.cs</DependentUpon>
+    <EmbeddedResource Include="DichVuKhachHangForm.resx">
+      <DependentUpon>DichVuKhachHangForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ChuyenPhongOForm.resx">
-      <DependentUpon>ChuyenPhongOForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="DuAnMaNguonGitForm.resx">
-      <DependentUpon>DuAnMaNguonGitForm.cs</DependentUpon>
+    <EmbeddedResource Include="ChuyenPhongForm.resx">
+      <DependentUpon>ChuyenPhongForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GoogleAccountForm.resx">
       <DependentUpon>GoogleAccountForm.cs</DependentUpon>
@@ -375,8 +366,8 @@
       <DependentUpon>ThanhToanBillForm.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="HuongDanForm.resx">
-      <DependentUpon>HuongDanForm.cs</DependentUpon>
+    <EmbeddedResource Include="ThongTinDuAnForm.resx">
+      <DependentUpon>ThongTinDuAnForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="KhachHangForm.resx">
       <DependentUpon>KhachHangForm.cs</DependentUpon>
@@ -477,7 +468,7 @@
     <None Include="Resources\Background.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Introduction.pdf" />
+    <None Include="Resources\Instruction.pdf" />
     <None Include="Resources\Bin.png" />
   </ItemGroup>
   <ItemGroup>
@@ -538,7 +529,7 @@
     <None Include="Resources\Gmail.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Introductions.png" />
+    <None Include="Resources\Light.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Service.png" />

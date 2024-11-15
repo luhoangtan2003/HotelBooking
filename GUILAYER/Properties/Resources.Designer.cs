@@ -223,20 +223,10 @@ namespace GUILAYER.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        internal static byte[] Introduction {
+        internal static byte[] Instruction {
             get {
-                object obj = ResourceManager.GetObject("Introduction", resourceCulture);
+                object obj = ResourceManager.GetObject("Instruction", resourceCulture);
                 return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Introductions {
-            get {
-                object obj = ResourceManager.GetObject("Introductions", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
@@ -246,6 +236,16 @@ namespace GUILAYER.Properties {
         internal static System.Drawing.Bitmap Invoice {
             get {
                 object obj = ResourceManager.GetObject("Invoice", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Light {
+            get {
+                object obj = ResourceManager.GetObject("Light", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
