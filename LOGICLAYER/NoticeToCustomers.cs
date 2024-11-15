@@ -10,9 +10,11 @@ namespace LOGICLAYER
 {
     public class NoticeToCustomers
     {
-        String MailUsername = Environment.GetEnvironmentVariable("MailUsername");
+        String MailUsername = Environment.GetEnvironmentVariable("MailUsername", EnvironmentVariableTarget.User);
 
-        String MailPassword = Environment.GetEnvironmentVariable("MailPassword");
+        String MailPassword = Environment.GetEnvironmentVariable("MailPassword", EnvironmentVariableTarget.User);
+
+        String GetHotNumber = Environment.GetEnvironmentVariable("PhoneNumber", EnvironmentVariableTarget.User);
 
         String HotelSoftwareName = Application.ProductName;
 
@@ -33,6 +35,11 @@ namespace LOGICLAYER
 
         public void SendMail(MimeMessage MessageBox)
         {
+            if(!IsValidEmail(MailUsername) || String.IsNullOrEmpty(MailPassword))
+            {
+                return;
+            }
+
             using SmtpClient Client = SetConnect();
 
             Client.Authenticate(MailUsername, MailPassword);
@@ -100,8 +107,8 @@ namespace LOGICLAYER
                 - Trạng thái: {DatPhong.TENTRANGTHAI}
                 - Ghi chú(nếu có) : {DatPhong.GHICHU}
                 Quý khách vui lòng kiểm tra lại thông tin. Nếu có bất kỳ thắc mắc nào, xin vui lòng liên hệ: 
-                    Phone: 0366634188             
-                    Email: luhoangtan102903@gmail.com
+                    Phone: {GetHotNumber}             
+                    Email: {MailUsername}
                 Trân trọng,
                 Đội ngũ quản lý khách sạn LHT Hotel";
 
@@ -125,8 +132,8 @@ namespace LOGICLAYER
                 - Trạng thái: Đã hủy ngày {DateTime.Now}
                 - Lý do: Hủy theo yêu cẩu của khách hàng
                 Nếu quý khách có bất kỳ thắc mắc nào về việc hủy đặt phòng, xin vui lòng liên hệ:
-                    Phone: 0366634188
-                    Email: luhoangtan102903@gmail.com
+                    Phone: {GetHotNumber}
+                    Email: {MailUsername}
                 Trân trọng,
                 Đội ngũ quản lý khách sạn LHT Hotel";
 
@@ -149,8 +156,8 @@ namespace LOGICLAYER
                 - Ngày nhận: {DateTime.Now}
                 - Ngày thanh toán: {DatPhong.NGAYTRA}
                 Nếu cần hỗ trợ, vui lòng liên hệ:
-                    Phone: 0366634188
-                    Email: luhoangtan102903@gmail.com
+                    Phone: {GetHotNumber}
+                    Email: {MailUsername}
                 Trân trọng,
                 Đội ngũ quản lý khách sạn LHT Hotel";
 

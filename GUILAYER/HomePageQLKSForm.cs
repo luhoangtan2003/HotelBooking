@@ -78,6 +78,8 @@ namespace GUILAYER
         private void MainForm_Load(object sender, EventArgs e)
         {
             RealTime.Start();
+
+            UserInformation.Caption = Application.ProductName;
         }
 
         private void Form_KeyDown(object sender, KeyEventArgs e)
@@ -199,9 +201,11 @@ namespace GUILAYER
             OpenForm(typeof(QuanLyMailboxForm));
         }
 
-        private void TaiKhoanGoogle_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        private void UserInformation_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            OpenForm(typeof(GoogleAccountForm));
+            ThongTinNguoiDung InfoAcc = new();
+
+            InfoAcc.ShowDialog();
         }
     }
 }

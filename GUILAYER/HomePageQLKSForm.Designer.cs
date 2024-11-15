@@ -32,6 +32,7 @@
             DevExpress.XtraSplashScreen.SplashScreenManager SplashScreenManager = new DevExpress.XtraSplashScreen.SplashScreenManager(this, typeof(global::GUILAYER.SplashScreenProject), true, true, true);
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomePageQLKSForm));
             this.ThanhRibbon = new DevExpress.XtraBars.Ribbon.RibbonControl();
+            this.UserInformation = new DevExpress.XtraBars.BarStaticItem();
             this.DatPhong = new DevExpress.XtraBars.BarButtonItem();
             this.TraPhong = new DevExpress.XtraBars.BarButtonItem();
             this.DatDichVu = new DevExpress.XtraBars.BarButtonItem();
@@ -51,7 +52,6 @@
             this.SkinPaletteDropDownButtonItem1 = new DevExpress.XtraBars.SkinPaletteDropDownButtonItem();
             this.DoiPhong = new DevExpress.XtraBars.BarButtonItem();
             this.Gmail = new DevExpress.XtraBars.BarButtonItem();
-            this.TaiKhoanGoogle = new DevExpress.XtraBars.BarButtonItem();
             this.TrangDichVu = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.RibbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.TrangQuanLy = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -115,10 +115,12 @@
             // 
             // ThanhRibbon
             // 
+            this.ThanhRibbon.CaptionBarItemLinks.Add(this.UserInformation);
             this.ThanhRibbon.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ThanhRibbon.EmptyAreaImageOptions.ImagePadding = new System.Windows.Forms.Padding(2806, 2524, 2806, 2524);
             this.ThanhRibbon.ExpandCollapseItem.Id = 0;
             this.ThanhRibbon.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
+            this.UserInformation,
             this.ThanhRibbon.ExpandCollapseItem,
             this.DatPhong,
             this.TraPhong,
@@ -138,11 +140,10 @@
             this.SkinDropDownButtonItem1,
             this.SkinPaletteDropDownButtonItem1,
             this.DoiPhong,
-            this.Gmail,
-            this.TaiKhoanGoogle});
+            this.Gmail});
             this.ThanhRibbon.Location = new System.Drawing.Point(0, 0);
             this.ThanhRibbon.Margin = new System.Windows.Forms.Padding(330, 289, 330, 289);
-            this.ThanhRibbon.MaxItemId = 32;
+            this.ThanhRibbon.MaxItemId = 33;
             this.ThanhRibbon.Name = "ThanhRibbon";
             this.ThanhRibbon.OptionsMenuMinWidth = 30499;
             this.ThanhRibbon.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
@@ -150,6 +151,15 @@
             this.TrangQuanLy,
             this.TrangHeThong});
             this.ThanhRibbon.Size = new System.Drawing.Size(1920, 202);
+            // 
+            // UserInformation
+            // 
+            this.UserInformation.Caption = "Thông Tin";
+            this.UserInformation.Id = 32;
+            this.UserInformation.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("UserInformation.ImageOptions.SvgImage")));
+            this.UserInformation.Name = "UserInformation";
+            this.UserInformation.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            this.UserInformation.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.UserInformation_ItemClick);
             // 
             // DatPhong
             // 
@@ -314,15 +324,6 @@
             this.Gmail.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.Gmail.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.QuanLyMailbox_ItemClick);
             // 
-            // TaiKhoanGoogle
-            // 
-            this.TaiKhoanGoogle.Caption = "TÀI KHOẢN";
-            this.TaiKhoanGoogle.Id = 31;
-            this.TaiKhoanGoogle.ImageOptions.Image = global::GUILAYER.Properties.Resources.Google;
-            this.TaiKhoanGoogle.Name = "TaiKhoanGoogle";
-            this.TaiKhoanGoogle.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            this.TaiKhoanGoogle.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.TaiKhoanGoogle_ItemClick);
-            // 
             // TrangDichVu
             // 
             this.TrangDichVu.AppearanceSelected.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold);
@@ -392,7 +393,6 @@
             this.RibbonPageGroup5.ItemLinks.Add(this.SaoLuu);
             this.RibbonPageGroup5.ItemLinks.Add(this.KhoiPhuc);
             this.RibbonPageGroup5.ItemLinks.Add(this.GioiThieu);
-            this.RibbonPageGroup5.ItemLinks.Add(this.TaiKhoanGoogle);
             this.RibbonPageGroup5.Name = "RibbonPageGroup5";
             this.RibbonPageGroup5.Text = "HỆ THỐNG";
             // 
@@ -750,6 +750,6 @@
         private DevExpress.XtraEditors.ListBoxControl DanhSachDenHanTraPhong;
         private DevExpress.XtraEditors.ListBoxControl DanhSachQuaHanTraPhong;
         private DevExpress.XtraBars.BarButtonItem Gmail;
-        private DevExpress.XtraBars.BarButtonItem TaiKhoanGoogle;
+        private DevExpress.XtraBars.BarStaticItem UserInformation;
     }
 }
